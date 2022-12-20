@@ -1,0 +1,37 @@
+{
+  "general": {
+    "entityId": 2,
+    "enabled": true,
+    "parentName": "Hardware",
+    "name": "Printer/Scanner",
+    "tags": [
+      "hardware",
+      "sc-general",
+      "flow-automation"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41031,
+      "name": null
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 2,
+    "name": "Printer/Scanner",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-15T05:43:43.2965835Z"
+}

@@ -1,0 +1,35 @@
+{
+  "general": {
+    "entityId": 11,
+    "enabled": true,
+    "parentName": "Starters and leavers",
+    "name": "New Employee starting",
+    "tags": [
+      "hr"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41040,
+      "name": "DD Forms Showcase - New Employee Setup"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 11,
+    "name": "New Employee starting",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-15T05:53:48.8728297Z"
+}

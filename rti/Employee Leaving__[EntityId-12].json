@@ -1,0 +1,35 @@
+{
+  "general": {
+    "entityId": 12,
+    "enabled": false,
+    "parentName": "Starters and leavers",
+    "name": "Employee Leaving",
+    "tags": [
+      "hr"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41041,
+      "name": "DD Forms Showcase - An Employee is Leaving"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 12,
+    "name": "Employee Leaving",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-15T05:54:40.2532555Z"
+}

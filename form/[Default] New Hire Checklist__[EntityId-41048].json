@@ -1,0 +1,108 @@
+{
+  "form": {
+    "entityId": 41048,
+    "name": "[Default] New Hire Checklist",
+    "description": "Default Template",
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "5u059v",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Name (first, middle initial, and last name)",
+        "description": "Complete and fully spelled names when possible",
+        "identifier": "41k6ve",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Is email address requested also?",
+        "description": "Indicate if an email address should be added. License charges may apply",
+        "identifier": "xy4aj9",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "3ielpp"
+          },
+          {
+            "name": "No",
+            "identifier": "rwygj6"
+          }
+        ],
+        "meta": {
+          "render": "dropdown"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Email Address format",
+        "description": "Enter the actual email address(s) requested. Selection will be used in priority order\nExamples\nfirstnamelastname@email.com",
+        "identifier": "0jhz5u",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "xy4aj9",
+          "operator": "in",
+          "identifiers": [
+            "3ielpp"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "identifier": "bf39tg",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Start Date",
+        "description": "Enter the expected start date for the new user",
+        "identifier": "gxdl23",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Is a virtual desktop requested",
+        "identifier": "jxra6o",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "0wtwy8"
+          },
+          {
+            "name": "No",
+            "identifier": "dpg9wf"
+          },
+          {
+            "name": "I am not sure, contact me",
+            "identifier": "c1lhzq"
+          }
+        ]
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF3-0000-000000020474"
+  }
+}

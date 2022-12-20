@@ -1,0 +1,58 @@
+{
+  "general": {
+    "entityId": 1,
+    "enabled": true,
+    "parentName": null,
+    "name": "0: *Urgent Request | I can\u0027t work right now",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41029,
+      "name": "I can\u0027t work right now"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {
+    "connectWise": {
+      "board": {
+        "entityId": 63,
+        "name": "Triage"
+      },
+      "status": {
+        "entityId": 1253,
+        "name": "New (portal)"
+      },
+      "priority": {
+        "entityId": 15,
+        "name": "Priority 2 - High"
+      },
+      "type": {
+        "entityId": 484,
+        "name": "Incident"
+      },
+      "subType": null,
+      "subTypeItem": null,
+      "source": {
+        "entityId": 6,
+        "name": "Portal"
+      }
+    }
+  },
+  "filter": {
+    "entityId": 1,
+    "name": "0: *Urgent Request | I can\u0027t work right now",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-14T20:51:58.8422638Z"
+}

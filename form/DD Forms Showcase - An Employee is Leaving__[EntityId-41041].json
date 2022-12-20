@@ -1,0 +1,210 @@
+{
+  "form": {
+    "entityId": 41041,
+    "name": "DD Forms Showcase - An Employee is Leaving",
+    "description": null,
+    "titleFormat": {
+      "format": "{1} is leaving on {2}",
+      "arguments": [
+        "7yein4",
+        "zh0g29"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Full Name",
+        "identifier": "7yein4",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Email Adress",
+        "identifier": "yibn6i",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Position Description",
+        "identifier": "046h6e",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Final day",
+        "identifier": "zh0g29",
+        "required": false,
+        "meta": {
+          "render": "date"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Employee computer ID",
+        "identifier": "2syxd9",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Do their emails need to be forwarded to another person?",
+        "description": "If Yes, please specify who should the emails be forwarded to and their email address on the next question.",
+        "identifier": "5apqff",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "l6iwqa"
+          },
+          {
+            "name": "No",
+            "identifier": "t0398i"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Who do the emails need to be forwarded to?",
+        "identifier": "wh5c0d",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "5apqff",
+          "operator": "in",
+          "identifiers": [
+            "l6iwqa"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does this person have any software licenses that need to be decommissioned?",
+        "description": "If Yes, please specify which licenses on the next question.",
+        "identifier": "t13kjh",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "zgkaby"
+          },
+          {
+            "name": "No",
+            "identifier": "fy3aed"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Which licenses need to be decommissioned?",
+        "identifier": "xg366l",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "t13kjh",
+          "operator": "in",
+          "identifiers": [
+            "zgkaby"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Do you require access to historical email information for the person leaving?",
+        "description": "If Yes, please specify who requires access to historical emails and their email address on the next question.",
+        "identifier": "cje1kj",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "w26drb"
+          },
+          {
+            "name": "No",
+            "identifier": "4zdvni"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Who requires access to the historical emails?",
+        "identifier": "picmov",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "cje1kj",
+          "operator": "in",
+          "identifiers": [
+            "w26drb"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does their data need to be backed up?",
+        "description": "If Yes, please specify who needs access to the data backed up on the next question.",
+        "identifier": "f89tug",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "ljp6nz"
+          },
+          {
+            "name": "No",
+            "identifier": "4c4xpb"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Who needs access to the backed up data?",
+        "identifier": "v4jkur",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "f89tug",
+          "operator": "in",
+          "identifiers": [
+            "ljp6nz"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Do you require us to wipe their computer?",
+        "identifier": "x8g8z0",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "b95t7d"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Have we missed something? Use this field for additional notes:",
+        "identifier": "f2mcbg",
+        "required": false
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF3-0000-00000001F8C7"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "general": {
+    "entityId": 9,
+    "enabled": true,
+    "parentName": "Microsoft Office 365",
+    "name": "Microsoft Teams",
+    "tags": [
+      "software",
+      "sc-general",
+      "flow-automation"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41038,
+      "name": null
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 9,
+    "name": "Microsoft Teams",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-15T05:43:55.4854384Z"
+}

@@ -1,0 +1,70 @@
+{
+  "entityId": "1-A",
+  "name": "Service Catalogue - General",
+  "type": "tickets",
+  "state": "enabled",
+  "source": "custom",
+  "trigger": {
+    "name": "Tickets",
+    "type": "tickets",
+    "events": [
+      "ticket.new"
+    ],
+    "conditions": [
+      {
+        "field": "ticket_form_id",
+        "operator": "equals_to_any_of",
+        "options": {
+          "integerEntities": [
+            {
+              "entityId": 41034,
+              "name": "[Hardware] General"
+            },
+            {
+              "entityId": 41031,
+              "name": "[Hardware] Printers/Scanner"
+            },
+            {
+              "entityId": 41033,
+              "name": "[Hardware] Server"
+            },
+            {
+              "entityId": 41032,
+              "name": "[Hardware] WiFi"
+            },
+            {
+              "entityId": 41037,
+              "name": "[Microsoft Office 365] Microsoft Sharepoint"
+            },
+            {
+              "entityId": 41038,
+              "name": "[Microsoft Office 365] Microsoft Teams"
+            },
+            {
+              "entityId": 41039,
+              "name": "[Microsoft Office 365] Multi-factor Authentication Setup"
+            },
+            {
+              "entityId": 41036,
+              "name": "[Microsoft Office 365] Outlook (Email)"
+            },
+            {
+              "entityId": 41035,
+              "name": "[Software] Request a new software install"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "actions": [],
+  "settings": {
+    "webhookSecret": "8LYTj7hOwOPO2JndpZ2eLLvfCwX0nimH"
+  },
+  "createdAt": "2022-12-15T05:44:01.7503694Z",
+  "lastModifiedAt": "2022-12-15T05:44:02.3983665Z",
+  "lastModifiedBy": {
+    "entityId": "l_api_key.static",
+    "name": "API Key"
+  }
+}

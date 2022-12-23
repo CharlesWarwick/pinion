@@ -1,0 +1,67 @@
+{
+  "general": {
+    "entityId": 11,
+    "enabled": true,
+    "parentName": null,
+    "name": "Nichols New Employee starting",
+    "tags": [
+      "hr",
+      "nichols"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41159,
+      "name": "Nichols New Hire Checklist"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {
+    "connectWise": {
+      "board": {
+        "entityId": 63,
+        "name": "Triage"
+      },
+      "status": {
+        "entityId": 1232,
+        "name": "New~"
+      },
+      "priority": {
+        "entityId": 22,
+        "name": "Priority 3 - Normal"
+      },
+      "type": {
+        "entityId": 486,
+        "name": "Request"
+      },
+      "subType": {
+        "entityId": 1893,
+        "name": "Account Management"
+      },
+      "subTypeItem": {
+        "entityId": 648,
+        "name": "New User"
+      },
+      "source": {
+        "entityId": 6,
+        "name": "Portal"
+      }
+    }
+  },
+  "filter": {
+    "entityId": 11,
+    "name": "Nichols New Employee starting",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-22T15:47:16.0069501Z"
+}

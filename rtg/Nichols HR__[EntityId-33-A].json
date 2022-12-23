@@ -1,0 +1,44 @@
+{
+  "entityId": "33-A",
+  "name": "Nichols HR",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 11,
+      "parentName": null,
+      "name": "Nichols New Employee starting",
+      "tags": [
+        "hr",
+        "nichols"
+      ],
+      "enabled": true,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": {
+        "entityId": 63,
+        "name": "Triage"
+      },
+      "status": {
+        "entityId": 1232,
+        "name": "New~"
+      },
+      "priority": {
+        "entityId": 22,
+        "name": "Priority 3 - Normal"
+      },
+      "lastModifiedAt": "2022-12-22T15:47:16.0069501Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2022-12-22T15:31:00.3338813Z",
+    "updatedBy": {
+      "entityId": "m~157",
+      "name": "dgarber"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 1
+  }
+}

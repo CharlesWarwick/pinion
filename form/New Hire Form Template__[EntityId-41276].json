@@ -1,0 +1,235 @@
+{
+  "form": {
+    "entityId": 41276,
+    "name": "New Hire Form Template",
+    "description": "This form is for users and organizations that will NOT utilize VDI\n**Please Note that new hire forms require five (5) business days to process",
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Contact requesting new hire (First and Last name)",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "ovn959",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Date Submitted",
+        "description": "Select the submission date. Enter the date the request is being made. You should enter today\u0027s date in most cases. This is a required field.\n*Example: 12/28/2022*",
+        "identifier": "wawdcf",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Name of new hire (First middle_initial Last)",
+        "description": "Type the first-name, middle-initial, and last-name of the new hire. Be sure to confirm spelling. A Full middle name is acceptable. This is a required field. \n*Example: Will B Smith*",
+        "identifier": "t9g4rb",
+        "required": true
+      },
+      {
+        "type": "single_choice",
+        "name": "Is an E-Mail address requested?",
+        "description": "Will the new hire require an email address as part of this request? This is a required field.",
+        "identifier": "hndts8",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "nsu4iz",
+            "selected": false
+          },
+          {
+            "name": "No",
+            "identifier": "vlr3kg",
+            "selected": true
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Email Address \u0026 Format (Naming Convention)",
+        "description": "Type the actual email address requested. The best practice is to utilize the first initial and last name as the email. This is a required field.\n*Example: wsmith@test.com*",
+        "identifier": "als5ft",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "hndts8",
+          "operator": "in",
+          "identifiers": [
+            "nsu4iz"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "description": "Enter the location this user will be based. Each location may have specific resources such as printers. \n*Example: Helena Office*",
+        "identifier": "ylepbb",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Start Date",
+        "description": "Select the expected start date for the new hire.  This is a required field. \n*Example: 12/28/2022*",
+        "identifier": "kmnqmw",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Is there an existing user to copy?",
+        "description": "Using an existing user can quickly duplicate required credentials and permissions. Cloning a role or department user can make sure that memberships and permissions are duplicated accurately.\n*Example: Yes*",
+        "identifier": "vtackf",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "tljvjv",
+            "selected": false
+          },
+          {
+            "name": "No",
+            "identifier": "2eh0l7",
+            "selected": true
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "User to Copy",
+        "description": "This is to help with folder permissions for the new user. Type the Name of the user to copy. Full name is recommended. This is a required field.\n*Example: John Doe*",
+        "identifier": "av2h09",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vtackf",
+          "operator": "in",
+          "identifiers": [
+            "tljvjv"
+          ]
+        }
+      },
+      {
+        "type": "long_text",
+        "name": "Shared drive permissions for the new user",
+        "description": "List the shared drives the new user will require access to. Make sure to include the drive letter and path. You may require multiple Mapped drives. Enter all expected Shared Drives to be mapped.\n*Example: D:Company Data\\forms*",
+        "identifier": "ochisq",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vtackf",
+          "operator": "in",
+          "identifiers": [
+            "2eh0l7"
+          ]
+        }
+      },
+      {
+        "type": "long_text",
+        "name": "Distribution Groups for New User",
+        "description": "List any distribution groups the new user should be a member of. Multiple entries are expected. \n*Example: All Users, HR Dept, Helena Office Staff*",
+        "identifier": "nvkb5t",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vtackf",
+          "operator": "in",
+          "identifiers": [
+            "2eh0l7"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Is any additional Hardware Required?",
+        "description": "Please indicate if any additional hardware is required for the new user. This is a required field. Typical needs include:\n* Workstation\n* Laptop.\n* Phone",
+        "identifier": "o0jmij",
+        "required": true,
+        "choices": [
+          {
+            "name": "No",
+            "identifier": "as5700",
+            "selected": true
+          },
+          {
+            "name": "Yes",
+            "identifier": "zcfuiq",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "type": "long_text",
+        "name": "Please list the hardware required",
+        "description": "List each item required for the new user\n*Example: Workstation and Phone*",
+        "identifier": "l3ppbi",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "o0jmij",
+          "operator": "in",
+          "identifiers": [
+            "zcfuiq"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Any additional software required",
+        "description": "select yes if any specific software needs to be prepared or installed for the new user.",
+        "identifier": "k1ufj3",
+        "required": false,
+        "choices": [
+          {
+            "name": "No",
+            "identifier": "yw6apl",
+            "selected": true
+          },
+          {
+            "name": "Yes",
+            "identifier": "09y5qu",
+            "selected": false
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vtackf",
+          "operator": "in",
+          "identifiers": [
+            "2eh0l7"
+          ]
+        }
+      },
+      {
+        "type": "long_text",
+        "name": "List software requirements",
+        "description": "List software that will need to installed",
+        "identifier": "27br5w",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "k1ufj3",
+          "operator": "in",
+          "identifiers": [
+            "09y5qu"
+          ]
+        }
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF5-0000-000000002003"
+  }
+}

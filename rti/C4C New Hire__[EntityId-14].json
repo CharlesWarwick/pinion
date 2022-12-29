@@ -1,0 +1,33 @@
+{
+  "general": {
+    "entityId": 14,
+    "enabled": false,
+    "parentName": null,
+    "name": "C4C New Hire",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41281,
+      "name": "C4C New Hire Checklist"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 14,
+    "name": "C4C New Hire",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-28T17:56:57.9350579Z"
+}

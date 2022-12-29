@@ -1,0 +1,124 @@
+{
+  "form": {
+    "entityId": 41281,
+    "name": "C4C New Hire Checklist",
+    "description": "Default Template",
+    "titleFormat": null,
+    "tags": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Name (first, middle initial, and last name)",
+        "description": "Complete and fully spelled names when possible",
+        "identifier": "41k6ve",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Email Address",
+        "description": "Enter the desired email address.  The format is *First_Name@catalystforchange.org*",
+        "identifier": "x9sgat",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Office Phone Number",
+        "description": "Enter the office phone number if known.",
+        "identifier": "t9fezz",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Cell Phone Number",
+        "description": "Enter the users cell phone number",
+        "identifier": "cfi9ao",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "identifier": "bf39tg",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Start Date",
+        "description": "Enter the expected start date for the employee.",
+        "identifier": "5u059v",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "multiple_choice",
+        "name": "What Group for Folder Access should they be in",
+        "description": "Select the desired group or groups",
+        "identifier": "63vm8v",
+        "required": false,
+        "choices": [
+          {
+            "name": "Management",
+            "identifier": "dzssa4"
+          },
+          {
+            "name": "Catalyst Files",
+            "identifier": "jqnel8"
+          },
+          {
+            "name": "Operations Programs",
+            "identifier": "b8bhct"
+          },
+          {
+            "name": "CHW Program",
+            "identifier": "pauylg"
+          },
+          {
+            "name": "Board",
+            "identifier": "ohhz11"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "name": "What Email Distribution Group should they be in.",
+        "description": "Select the desired group or groups",
+        "identifier": "e7fpft",
+        "required": false,
+        "choices": [
+          {
+            "name": "board@catalystforchange.org",
+            "identifier": "i3jr2a"
+          },
+          {
+            "name": "chw@catalystforchange.org",
+            "identifier": "3i6yab"
+          },
+          {
+            "name": "classroom_teachers@catalystforchange.org",
+            "identifier": "nmmpjh"
+          },
+          {
+            "name": "executive@catalystforchange.org",
+            "identifier": "t6on5x"
+          },
+          {
+            "name": "info@catalystforchange.org",
+            "identifier": "0uzlzm"
+          },
+          {
+            "name": "management@catalystforchange.org",
+            "identifier": "kotsg7"
+          },
+          {
+            "name": "staff@catalystforchange.org",
+            "identifier": "dir5s0"
+          }
+        ]
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF5-0000-000000002064"
+  }
+}

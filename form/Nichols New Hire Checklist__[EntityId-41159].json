@@ -7,36 +7,61 @@
     "tags": [],
     "fields": [
       {
-        "type": "date",
-        "name": "Submission Date",
-        "description": "Enter today\u0027s date for the New User Request",
-        "identifier": "5u059v",
-        "required": false,
-        "meta": {
-          "render": "date_time"
-        }
+        "type": "short_text",
+        "name": "Name (first/last)",
+        "description": "Complete and fully spelled names when possible",
+        "identifier": "41k6ve",
+        "required": true
       },
       {
         "type": "short_text",
-        "name": "Name (first, middle initial, and last name)",
-        "description": "Complete and fully spelled names when possible",
-        "identifier": "41k6ve",
-        "required": false
+        "name": "Email Address",
+        "description": "Enter the desired email address.  The standard format is *FirstInitialLastName@nicholsaccounting.com*",
+        "identifier": "0jhz5u",
+        "required": true
+      },
+      {
+        "type": "phone",
+        "name": "Cell Phone Number",
+        "description": "This is used for setting up DUO MFA for the employee.",
+        "identifier": "v1v35n",
+        "required": true,
+        "meta": {
+          "country": "US"
+        }
+      },
+      {
+        "type": "phone",
+        "name": "Office Phone Number",
+        "description": "If you have a desired office phone number to use, otherwise we will assign one.",
+        "identifier": "186me6",
+        "required": false,
+        "meta": {
+          "country": "US"
+        }
       },
       {
         "type": "single_choice",
-        "name": "Is email address requested also?",
-        "description": "Indicate if an email address should be added. License charges may apply",
-        "identifier": "xy4aj9",
-        "required": false,
+        "name": "Office Location",
+        "description": "Which office location will the new employee be located at.",
+        "identifier": "q2yv1v",
+        "required": true,
         "choices": [
           {
-            "name": "Yes",
-            "identifier": "3ielpp"
+            "name": "Nampa",
+            "identifier": "22rrwp"
           },
           {
-            "name": "No",
-            "identifier": "rwygj6"
+            "name": "Ontario",
+            "identifier": "spciqt"
+          },
+          {
+            "name": "Boise",
+            "identifier": "dwu22z"
+          },
+          {
+            "name": "Work from home",
+            "identifier": "izl4n5"
           }
         ],
         "meta": {
@@ -44,59 +69,276 @@
         }
       },
       {
-        "type": "short_text",
-        "name": "Email Address format",
-        "description": "Enter the actual email address(s) requested. Selection will be used in priority order\nExamples\nfirstnamelastname@email.com",
-        "identifier": "0jhz5u",
-        "required": false,
-        "condition": {
-          "parentId": "base_section",
-          "parentFieldId": "xy4aj9",
-          "operator": "in",
-          "identifiers": [
-            "3ielpp"
-          ]
-        }
-      },
-      {
-        "type": "short_text",
-        "name": "Office Location",
-        "identifier": "bf39tg",
-        "required": false
-      },
-      {
         "type": "date",
         "name": "Start Date",
-        "description": "Enter the expected start date for the new user",
+        "description": "Enter the expected start date for the new employee",
         "identifier": "gxdl23",
-        "required": false,
+        "required": true,
         "meta": {
           "render": "date_time"
         }
       },
       {
+        "type": "short_text",
+        "name": "Manager\u0027s Name",
+        "description": "Enter the name of the Manager for the employee.",
+        "identifier": "cj7afk",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Position Title",
+        "description": "Enter the Position or Title of the employee",
+        "identifier": "ljonjm",
+        "required": false
+      },
+      {
         "type": "single_choice",
-        "name": "Is a virtual desktop requested",
-        "identifier": "jxra6o",
+        "name": "Copy Existing Employee?",
+        "description": "If there is an existing employee that has the same drive mapping and email distribution groups we can copy this user for the new user.",
+        "identifier": "3yxcno",
         "required": false,
         "choices": [
           {
             "name": "Yes",
-            "identifier": "0wtwy8"
+            "identifier": "yes",
+            "selected": true
           },
           {
             "name": "No",
-            "identifier": "dpg9wf"
+            "identifier": "no",
+            "selected": false
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the user",
+        "description": "This is the user we will copy for the new employee.",
+        "identifier": "oaqwft",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "3yxcno",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Drive Mappings",
+        "description": "Check the drive mappings that the new employee will need access to",
+        "identifier": "e7glwr",
+        "required": false,
+        "choices": [
+          {
+            "name": "E",
+            "identifier": "42fpeh"
           },
           {
-            "name": "I am not sure, contact me",
-            "identifier": "c1lhzq"
+            "name": "K",
+            "identifier": "t445dp"
+          },
+          {
+            "name": "M",
+            "identifier": "kpsf8p"
+          },
+          {
+            "name": "R",
+            "identifier": "g4uhxc"
+          },
+          {
+            "name": "T",
+            "identifier": "kofom6"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "3yxcno",
+          "operator": "in",
+          "identifiers": [
+            "no"
+          ]
+        }
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Email Distribution Groups",
+        "description": "Which email distribution groups will the employee need to be added to?",
+        "identifier": "pes1ng",
+        "required": false,
+        "choices": [
+          {
+            "name": "Nichols Boise - BoiseAll@nicholsaccounting.com",
+            "identifier": "4q7i39"
+          },
+          {
+            "name": "Nichols Nampa - NampaAll@nicholsaccounting.com",
+            "identifier": "kl6dlf"
+          },
+          {
+            "name": "Nichols Ontario - OntarioAll@nicholsaccounting.com",
+            "identifier": "a0qy00"
+          },
+          {
+            "name": "Nichols everyone - NicholsAll@nicholsaccounting.com",
+            "identifier": "axew8z"
+          },
+          {
+            "name": "Tax Department - taxdepartment@nicholsaccounting.com",
+            "identifier": "uzf1wt"
+          },
+          {
+            "name": "CAS Department - CASDepartment@nicholsaccounting.com",
+            "identifier": "e354gx"
+          },
+          {
+            "name": "Audit Department - auditdivision@nicholsaccounting.com",
+            "identifier": "cif1c7"
+          },
+          {
+            "name": "CX Department - clientexperience@nicholsaccounting.com",
+            "identifier": "1x5tgm"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "3yxcno",
+          "operator": "in",
+          "identifiers": [
+            "no"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Hardware Setup Type",
+        "description": "Which hardware setup does the employee need?",
+        "identifier": "osjltx",
+        "required": false,
+        "choices": [
+          {
+            "name": "2 monitors, desktop, webcam, keyboard, mouse, speakers, Teams phone, and scanner",
+            "identifier": "bymc6l"
+          },
+          {
+            "name": "2 monitors, laptop, portal monitor, keyboard, mouse, speakers, and scanner",
+            "identifier": "n6ex2b"
           }
         ]
+      },
+      {
+        "type": "short_text",
+        "name": "Additional Hardware (if applicable)",
+        "description": "Is there any additional hardware that is needed beside the above hardware setup.",
+        "identifier": "96hgi8",
+        "required": false
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Software Programs Needed",
+        "description": "Which software does the employee need?",
+        "identifier": "unef1n",
+        "required": false,
+        "choices": [
+          {
+            "name": "Virtual Machine",
+            "identifier": "3qprh5"
+          },
+          {
+            "name": "Office 365",
+            "identifier": "3g64em"
+          },
+          {
+            "name": "Adobe*",
+            "identifier": "681pgf"
+          },
+          {
+            "name": "CaseWare*",
+            "identifier": "pcu298"
+          },
+          {
+            "name": "Lacerte*",
+            "identifier": "uyl5by"
+          },
+          {
+            "name": "Judy\u2019s 10 Key*",
+            "identifier": "3p7yyf"
+          },
+          {
+            "name": "Time Value*",
+            "identifier": "us9w2u"
+          },
+          {
+            "name": "ACS*",
+            "identifier": "vlzilv"
+          },
+          {
+            "name": "Last Pass",
+            "identifier": "mfcn67"
+          },
+          {
+            "name": "File Center*",
+            "identifier": "hqfga1"
+          },
+          {
+            "name": "PDF Factory*",
+            "identifier": "bav3kx"
+          },
+          {
+            "name": "QB Desktop",
+            "identifier": "gvbbn8"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Account Set-up",
+        "description": "Create account, test, and notate credentials on vital card, and assign permissions if applicable.",
+        "identifier": "k7wh58",
+        "required": false,
+        "choices": [
+          {
+            "name": "Outlook \u2013 Add Signature, Adobe Plug-in, and GFR Plug-in",
+            "identifier": "wwro6j"
+          },
+          {
+            "name": "Printers \u2013 Assign default, set up scan folder permissions",
+            "identifier": "apyjvl"
+          },
+          {
+            "name": "CheckPoint Learning *",
+            "identifier": "other"
+          },
+          {
+            "name": "ShareFile *",
+            "identifier": "yatpug"
+          },
+          {
+            "name": "GFR (Go File Room) *",
+            "identifier": "g25v46"
+          },
+          {
+            "name": "Vitals Card \u2013 Please have the New Employee Vitals Card completed before the employee\u2019s date of hire.",
+            "identifier": "fkt4rb"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Any additional information that wasn\u0027t covered above.",
+        "description": "If you have any additional information to provide that wasn\u0027t included in the list above please enter it here.",
+        "identifier": "h14nuo",
+        "required": false
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF4-0000-0000000062F2"
+    "etag": "01000000-0000-1DF5-0000-0000000025EC"
   }
 }

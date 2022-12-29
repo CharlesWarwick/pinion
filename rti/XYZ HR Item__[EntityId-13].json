@@ -1,0 +1,33 @@
+{
+  "general": {
+    "entityId": 13,
+    "enabled": false,
+    "parentName": null,
+    "name": "XYZ HR Item",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Hardware",
+      "Microsoft Office 365",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41276,
+      "name": "New Hire Form Template"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 13,
+    "name": "XYZ HR Item",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2022-12-28T17:40:21.1545452Z"
+}

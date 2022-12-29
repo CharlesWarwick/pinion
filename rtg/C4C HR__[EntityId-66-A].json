@@ -1,0 +1,32 @@
+{
+  "entityId": "66-A",
+  "name": "C4C HR",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 14,
+      "parentName": null,
+      "name": "C4C New Hire",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2022-12-28T17:56:57.9350579Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2022-12-28T17:56:39.9730678Z",
+    "updatedBy": {
+      "entityId": "m~149",
+      "name": "dreichert"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 1
+  }
+}

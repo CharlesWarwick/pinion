@@ -1,0 +1,32 @@
+{
+  "entityId": "65-A",
+  "name": "XYZ HR Department",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 13,
+      "parentName": null,
+      "name": "XYZ HR Item",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2022-12-28T17:40:21.1545452Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2022-12-28T16:23:34.5804774Z",
+    "updatedBy": {
+      "entityId": "m~157",
+      "name": "dgarber"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 0
+  }
+}

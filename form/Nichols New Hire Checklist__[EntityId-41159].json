@@ -137,23 +137,23 @@
         "required": false,
         "choices": [
           {
-            "name": "E",
+            "name": "E - Client Executables",
             "identifier": "42fpeh"
           },
           {
-            "name": "K",
+            "name": "K - Copy Share Data",
             "identifier": "t445dp"
           },
           {
-            "name": "M",
+            "name": "M - WinCSI Share",
             "identifier": "kpsf8p"
           },
           {
-            "name": "R",
+            "name": "R - Nichols Firm Wide Share",
             "identifier": "g4uhxc"
           },
           {
-            "name": "T",
+            "name": "T - Lacerte Tax Info",
             "identifier": "kofom6"
           }
         ],
@@ -297,6 +297,13 @@
         ]
       },
       {
+        "type": "short_text",
+        "name": "GFR (Go File Room) Setup - User to Clone",
+        "description": "We need to Clone an existing user to set up GFR.  What user can we clone that has the appropriate permissions and access?",
+        "identifier": "lsjzd9",
+        "required": false
+      },
+      {
         "type": "multiple_choice",
         "name": "Account Set-up",
         "description": "Create account, test, and notate credentials on vital card, and assign permissions if applicable.",
@@ -320,10 +327,6 @@
             "identifier": "yatpug"
           },
           {
-            "name": "GFR (Go File Room) *",
-            "identifier": "g25v46"
-          },
-          {
             "name": "Vitals Card \u2013 Please have the New Employee Vitals Card completed before the employee\u2019s date of hire.",
             "identifier": "fkt4rb"
           }
@@ -339,6 +342,6 @@
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-0000000025EC"
+    "etag": "01000000-0000-1DF5-0000-0000000067CF"
   }
 }

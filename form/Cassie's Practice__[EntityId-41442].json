@@ -11,9 +11,45 @@
       ]
     },
     "tags": [],
-    "fields": [],
+    "fields": [
+      {
+        "type": "single_choice",
+        "name": "Name of New Employee",
+        "description": "Enter Employees Given Name",
+        "identifier": "0hg2ug",
+        "required": true,
+        "choices": [
+          {
+            "name": "Enter if Employee has a Nickname",
+            "identifier": "ue9oeo"
+          }
+        ],
+        "meta": {
+          "render": "radio"
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Enter Start Date",
+        "identifier": "25xwq8",
+        "required": false,
+        "choices": [
+          {
+            "name": "unknown option",
+            "identifier": "c9k3wp"
+          }
+        ]
+      },
+      {
+        "type": "email",
+        "name": "Email Address",
+        "description": "Below please put an email address you would like this employee to have.",
+        "identifier": "xjaf13",
+        "required": true
+      }
+    ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-000000009196"
+    "etag": "01000000-0000-1DF5-0000-00000000A0A2"
   }
 }

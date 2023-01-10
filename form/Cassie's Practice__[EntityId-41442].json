@@ -46,10 +46,163 @@
         "description": "Below please put an email address you would like this employee to have.",
         "identifier": "xjaf13",
         "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Office Phone Number",
+        "description": "If you have a desired office phone number to use, otherwise we will assign one.",
+        "identifier": "l9pj4p",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Cell Phone Number",
+        "description": "This is used for setting up MFA DUO for the employee.",
+        "identifier": "67ojne",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Office Location",
+        "identifier": "ihqz5o",
+        "required": false,
+        "choices": [
+          {
+            "name": "Cooney Drive - Main Location",
+            "identifier": "2jjapv"
+          },
+          {
+            "name": "Residential - Harris Ave.",
+            "identifier": "9hjm52"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Manager\u0027s Name",
+        "description": "Enter the name of the Manager of the Employee.",
+        "identifier": "mr1ibm",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Position Title",
+        "description": "Enter the Position or Title of the employee.",
+        "identifier": "81tqth",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Copy Existing Employee",
+        "description": "If there is an existing employee that has the same drive mapping and email distribution groups, we can copy this user for the new user.",
+        "identifier": "niwqvm",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "coejd1"
+          },
+          {
+            "name": "No",
+            "identifier": "mw4ecn"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the Employee",
+        "description": "This is the user we will copy for the new employee.",
+        "identifier": "qeqbnz",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Drive Mappings",
+        "description": "Check the Drive Mappings that the new employee will need access to",
+        "identifier": "1s2swg",
+        "required": false,
+        "choices": [
+          {
+            "name": "Remote Admin",
+            "identifier": "9ttkfu"
+          },
+          {
+            "name": "Administration",
+            "identifier": "lbqcta"
+          },
+          {
+            "name": "Billing Data Licensing",
+            "identifier": "e3vu58"
+          },
+          {
+            "name": "Board Share",
+            "identifier": "drub99"
+          },
+          {
+            "name": "Clinical Share",
+            "identifier": "hhwx9a"
+          },
+          {
+            "name": "Community",
+            "identifier": "st2968"
+          },
+          {
+            "name": "Early Childhood",
+            "identifier": "by8k5y"
+          },
+          {
+            "name": "Early Childhood Finance Share",
+            "identifier": "a0hr5s"
+          },
+          {
+            "name": "Finance Share",
+            "identifier": "ql82s3"
+          },
+          {
+            "name": "General Share",
+            "identifier": "me15s9"
+          },
+          {
+            "name": "Remote IPC",
+            "identifier": "0u8h5z"
+          },
+          {
+            "name": "Mainetance",
+            "identifier": "sy8h29"
+          },
+          {
+            "name": "Marketing Development",
+            "identifier": "l664g7"
+          },
+          {
+            "name": "Marketing Development Program Managers",
+            "identifier": "l7htom"
+          },
+          {
+            "name": "Program Managers - Psych Share",
+            "identifier": "q6qiep"
+          },
+          {
+            "name": "Psych Share - Residential",
+            "identifier": "krzjlv"
+          },
+          {
+            "name": "Residential Counselors",
+            "identifier": "3wz7a2"
+          },
+          {
+            "name": "All Shares - Users",
+            "identifier": "mz1bdz"
+          },
+          {
+            "name": "Option 19",
+            "identifier": "regkfq"
+          }
+        ]
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-00000000A0A2"
+    "etag": "01000000-0000-1DF5-0000-00000000E14A"
   }
 }

@@ -43,9 +43,9 @@
       {
         "type": "email",
         "name": "Email Address",
-        "description": "Below please put an email address you would like this employee to have.",
-        "identifier": "xjaf13",
-        "required": true
+        "description": "What is the email address you are requesting",
+        "identifier": "hzg4wb",
+        "required": false
       },
       {
         "type": "short_text",
@@ -199,10 +199,92 @@
             "identifier": "regkfq"
           }
         ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Email Distribution Groups",
+        "description": "Which email Distribution groups will the employee need to be added to?",
+        "identifier": "mz12cc",
+        "required": false,
+        "choices": [
+          {
+            "name": "Option 1",
+            "identifier": "m04xgh"
+          },
+          {
+            "name": "Option 2",
+            "identifier": "4zd24o"
+          },
+          {
+            "name": "Option 3",
+            "identifier": "vvtsyw"
+          },
+          {
+            "name": "Option 4",
+            "identifier": "g4bf72"
+          },
+          {
+            "name": "Option 5",
+            "identifier": "dje76s"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Hardware Setup Type",
+        "description": "Which hardware setup does the employee need",
+        "identifier": "cy8uwi",
+        "required": false,
+        "choices": [
+          {
+            "name": "2 Monitors, desktop, webcam, keyboard, mouse, speakers, Teams Phone, and scanner",
+            "identifier": "bkv4qa"
+          },
+          {
+            "name": "2 Monitors, laptop, portal monitor, keyboard, mouse, speakers, and scanner",
+            "identifier": "xd85j5"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Additional Hardware (if applicable)",
+        "description": "Is there any additional hardware that is needed beside the above hardware setup.",
+        "identifier": "cbm65d",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Software Programs Needed",
+        "description": "Which software does the employee need?",
+        "identifier": "tjbs2y",
+        "required": false,
+        "choices": [
+          {
+            "name": "NextStep",
+            "identifier": "tyx3bv"
+          },
+          {
+            "name": "PrintBoss",
+            "identifier": "67etqr"
+          },
+          {
+            "name": "QuickBooks Online",
+            "identifier": "23wsjq"
+          },
+          {
+            "name": "O",
+            "identifier": "j1op6v"
+          },
+          {
+            "name": "Option 5",
+            "identifier": "zlzkn8"
+          }
+        ]
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-00000000E14A"
+    "etag": "01000000-0000-1DF5-0000-00000001348B"
   }
 }

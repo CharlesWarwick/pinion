@@ -184,14 +184,124 @@
         "required": false
       },
       {
-        "type": "statement",
-        "name": "New question title, please modify this.",
-        "identifier": "qmrnnc",
+        "type": "short_text",
+        "name": "Other Microsoft Open \u0026 Volume License Information",
+        "identifier": "kbe8lh",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Hosted Exchange Email Information",
+        "description": "(Credentials, Vendor Name \u0026 Account numbers)",
+        "identifier": "zu318m",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "If Available, Client ticketing portal credentials \u0026 Access address for Client Company",
+        "description": "We will log into the portal to view the clients ticket history to better understand support needs. If you have another way of providing ticket history, we are open to investigate.",
+        "identifier": "fno6z9",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Provide a narrative of the Backup Solution",
+        "description": "(Cloud, tape or hard drive, software, off-site, etc)",
+        "identifier": "zk1j8x",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Is the Backup encrypted",
+        "identifier": "egr020",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "i90a5p"
+          },
+          {
+            "name": "No",
+            "identifier": "cjv8gv"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Credentials for Backup System",
+        "identifier": "ge6084",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Location of physical software media - and of Network Locations",
+        "description": "(CD\u0027s, DVD\u0027s, etc) If applicable",
+        "identifier": "pgqhy6",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Information about Copiers and Printers",
+        "description": "Make and Model, IP Address, physical location, print server, scan to e-mail folder, used for tax, used for printing, current hardware vendor",
+        "identifier": "hfy16q",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Spam Filtration Service",
+        "identifier": "keejl8",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Internet Provider",
+        "description": "Account Number, Call-in Pin, etc",
+        "identifier": "cb00j8",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "After hours support",
+        "description": "Who we call/their number, do we get a key/code for the office",
+        "identifier": "x86sqd",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Phone system used and your vendor contact information",
+        "identifier": "dlilbk",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "If you use Office 365, we will need the credentials for the administrator of the account",
+        "identifier": "vfjvc4",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Website Info",
+        "description": "Is it hosted on-site, who supports it",
+        "identifier": "vp9yzp",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Wireless Info",
+        "description": "Names of networks, locations of access points, access and management credentials, etc",
+        "identifier": "nwi4o7",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Provide narrative of the Firewall Solution",
+        "description": "Brand, configuration, rules, etc",
+        "identifier": "dlqhke",
         "required": false
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-00000001347B"
+    "etag": "01000000-0000-1DF5-0000-0000000149BB"
   }
 }

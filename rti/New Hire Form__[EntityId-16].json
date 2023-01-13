@@ -1,0 +1,35 @@
+{
+  "general": {
+    "entityId": 16,
+    "enabled": false,
+    "parentName": "Better Body Fitness Person Actions",
+    "name": "New Hire Form",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Better Body Fitness Person Actions",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41569,
+      "name": "new hire for BBF"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 16,
+    "name": "New Hire Form",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-12T20:07:28.7137167Z"
+}

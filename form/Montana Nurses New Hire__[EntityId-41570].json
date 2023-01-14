@@ -11,9 +11,100 @@
       ]
     },
     "tags": [],
-    "fields": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Name of New Hire",
+        "identifier": "hgi7lu",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Start Date",
+        "identifier": "ebrry5",
+        "required": false
+      },
+      {
+        "type": "email",
+        "name": "Is an email address required?",
+        "identifier": "jxe7wa",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Office Phone Number",
+        "description": "What phone number are you requesting for the employee",
+        "identifier": "2zbtta",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Cell Phone Number",
+        "identifier": "77dck0",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Shared Drives",
+        "identifier": "m8v1uo",
+        "required": false,
+        "choices": [
+          {
+            "name": "N Drive",
+            "identifier": "7xu07h"
+          },
+          {
+            "name": "L Drive",
+            "identifier": "y6800q"
+          },
+          {
+            "name": "H Drive (OneDrive)",
+            "identifier": "9sokt0"
+          },
+          {
+            "name": "S Drive (education)",
+            "identifier": "4i6c4c"
+          },
+          {
+            "name": "QuickBooks",
+            "identifier": "5fu8qi"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Is Hardware Needed?",
+        "identifier": "cj8put",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "zcr53b"
+          },
+          {
+            "name": "No",
+            "identifier": "4edbo5"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "What Hardware?",
+        "description": "Please enter what Hardware you would like?",
+        "identifier": "yd8728",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "cj8put",
+          "operator": "in",
+          "identifiers": [
+            "zcr53b"
+          ]
+        }
+      }
+    ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-000000014BC3"
+    "etag": "01000000-0000-1DF5-0000-000000016529"
   }
 }

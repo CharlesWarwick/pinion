@@ -1,0 +1,35 @@
+{
+  "general": {
+    "entityId": 18,
+    "enabled": false,
+    "parentName": "Draft Items",
+    "name": "Draft Items",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41605,
+      "name": "Change Control Authorization Form **TEST** Dave Practice Form"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 18,
+    "name": "Draft Items",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-13T21:54:58.5728521Z"
+}

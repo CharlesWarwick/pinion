@@ -11,9 +11,37 @@
       ]
     },
     "tags": [],
-    "fields": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Contact requesting new hire (First and Last name)",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "utiu61",
+        "required": false
+      },
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "xkwyph",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Start Date",
+        "description": "The day the New Hire will be starting",
+        "identifier": "bm6wh6",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      }
+    ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-00000001553A"
+    "etag": "01000000-0000-1DF5-0000-000000016097"
   }
 }

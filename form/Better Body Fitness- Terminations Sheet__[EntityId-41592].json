@@ -1,0 +1,166 @@
+{
+  "form": {
+    "entityId": 41592,
+    "name": "Better Body Fitness: Terminations Sheet",
+    "description": null,
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Contact requesting new hire (First and Last name)",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "i54ezu",
+        "required": true
+      },
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "jmmol4",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Termination date",
+        "description": "Enter the day of the users last day",
+        "identifier": "gptbtz",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Termination Time",
+        "description": "Enter time time you want the account locked at",
+        "identifier": "1nwpf5",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Contact Requesting Termination (First and last Name)",
+        "identifier": "rf0dav",
+        "required": true
+      },
+      {
+        "type": "single_choice",
+        "name": "Termination type",
+        "identifier": "rxw69r",
+        "required": false,
+        "choices": [
+          {
+            "name": "Voluntary",
+            "identifier": "yes"
+          },
+          {
+            "name": "Involuntary",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "identifier": "b2p2hs",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Does this person have any software licenses that need to be decommissioned?",
+        "description": "If Yes, please specify which licenses on the next question.",
+        "identifier": "i9kb5h",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Which licenses need to be decommissioned?",
+        "identifier": "1xvqod",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "i9kb5h",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does their data need to be backed up?",
+        "description": "If Yes, please specify who needs access to the data backed up on the next question.",
+        "identifier": "7awlle",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Who needs access to the backed up data?",
+        "identifier": "7mfwkm",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "7awlle",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Do you require us to wipe their computer?",
+        "identifier": "dzg5ru",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Have we missed something? Use this field for additional notes:",
+        "identifier": "n1xbn9",
+        "required": false
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF5-0000-000000016D90"
+  }
+}

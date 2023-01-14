@@ -1,0 +1,32 @@
+{
+  "general": {
+    "entityId": 17,
+    "enabled": false,
+    "parentName": null,
+    "name": "Better Body Fitness: Termination",
+    "tags": null,
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": null,
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 17,
+    "name": "Better Body Fitness: Termination",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-13T16:47:45.1176769Z"
+}

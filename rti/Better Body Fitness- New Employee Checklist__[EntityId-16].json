@@ -1,0 +1,35 @@
+{
+  "general": {
+    "entityId": 16,
+    "enabled": false,
+    "parentName": null,
+    "name": "Better Body Fitness: New Employee Checklist",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41569,
+      "name": "new hire for BBF"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 16,
+    "name": "Better Body Fitness: New Employee Checklist",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-13T16:45:39.157056Z"
+}

@@ -1,0 +1,247 @@
+{
+  "form": {
+    "entityId": 41569,
+    "name": "Better Body Fitness: New Hire Form",
+    "description": "new hire form for better body fitness of montana",
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [
+      "bbf"
+    ],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Contact requesting new hire (First and Last name)",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "waf5zc",
+        "required": true
+      },
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "8f3gb0",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Start Date",
+        "description": "The day the New Hire will be starting",
+        "identifier": "ocum6a",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Name (first, middle initial, and last name)",
+        "description": "Type the first-name, middle-initial, and last-name of the new hire. Be sure to confirm spelling. A Full middle name is acceptable. This is a required field. \n*Example: Will B Smith*",
+        "identifier": "4clrkt",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "identifier": "30658j",
+        "required": true
+      },
+      {
+        "type": "single_choice",
+        "name": "Is an E-Mail address requested?",
+        "description": "Will the new hire require an email address as part of this request? This is a required field.",
+        "identifier": "5mtx0n",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Email Address format",
+        "description": "Type the actual email address requested. The best practice is to utilize the first initial and last name as the email. This is a required field.\n*Example: wsmith@test.com*",
+        "identifier": "wtvlah",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "5mtx0n",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "multiple_choice",
+        "name": "What teams group are they apart of",
+        "identifier": "rb7elq",
+        "required": false,
+        "choices": [
+          {
+            "name": "none",
+            "identifier": "3tkwv2"
+          },
+          {
+            "name": "BBFHelena@betterbodymontana.com",
+            "identifier": "vjxrq5"
+          },
+          {
+            "name": "BetterBodyFitness@betterbodymontana.com",
+            "identifier": "yezvne"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "5mtx0n",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Copy Existing Employee?",
+        "description": "If there is an existing employee that has the same drive mapping and email distribution groups we can copy this user for the new user.",
+        "identifier": "6t40pc",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the Employee",
+        "description": "This is the user we will copy for the new employee.",
+        "identifier": "c5u5r8",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "6t40pc",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the permissions",
+        "description": "This is where you put the exact permissions needed on a user as we are not copying them",
+        "identifier": "rafomc",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "6t40pc",
+          "operator": "in",
+          "identifiers": [
+            "no"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "phone number",
+        "description": "cell phone\\desk number so we can call the user when they submit a ticket",
+        "identifier": "wyt4ng",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Position Title",
+        "description": "Enter the Position or Title of the employee.",
+        "identifier": "ioey9d",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Additional Hardware (if applicable)",
+        "description": "Is there any additional hardware that is needed beside the above hardware setup.",
+        "identifier": "7tgc73",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Hardware needed",
+        "description": "Please tell us what a hardware the user is going to need in addition to what they have",
+        "identifier": "uke3f4",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "7tgc73",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Any additional software required",
+        "description": "select yes if any specific software needs to be prepared or installed for the new user.",
+        "identifier": "zd8zia",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "List software requirements",
+        "description": "List software that will need to installed",
+        "identifier": "5umpor",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "zd8zia",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF5-0000-0000000164D7"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "entityId": "161-A",
+  "name": "Draft Group",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 18,
+      "parentName": "Draft Items",
+      "name": "Draft Items",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-13T21:54:58.5728521Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2023-01-13T21:55:25.4887811Z",
+    "updatedBy": {
+      "entityId": "m~157",
+      "name": "dgarber"
+    },
+    "companyCount": 1,
+    "contactCount": 0,
+    "teamCount": 0
+  }
+}

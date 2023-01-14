@@ -1,0 +1,188 @@
+{
+  "form": {
+    "entityId": 41600,
+    "name": "Termination Form (General)",
+    "description": null,
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "single_choice",
+        "name": "Termination Type",
+        "description": "Please choose one",
+        "identifier": "ezi7qo",
+        "required": false,
+        "choices": [
+          {
+            "name": "Voluntary",
+            "identifier": "i5slrb"
+          },
+          {
+            "name": "Involuntary",
+            "identifier": "4d8w3j"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Contact Requesting Termination",
+        "description": "First Name and Last Name",
+        "identifier": "1boipr",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Terminated Employee\u0027s",
+        "description": "First and Last Name",
+        "identifier": "1u1gw3",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "description": "If Applicable",
+        "identifier": "9apaw0",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Effective Date",
+        "description": "Employee\u0027s Last Day (00/00/0000)",
+        "identifier": "kbf8o5",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "If you would like the password set to something specific enter here",
+        "identifier": "swxb8p",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Additional Services requested",
+        "description": "*Does the user need services such as Email Virtual Desktop or Network Drive*",
+        "identifier": "vij4v9",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "be7wsz"
+          },
+          {
+            "name": "No",
+            "identifier": "fqjvpv"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Email",
+        "description": "Extra charge will apply for license if email only access is needed.",
+        "identifier": "nm52da",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "nf3kz6"
+          },
+          {
+            "name": "No",
+            "identifier": "uzipa9"
+          },
+          {
+            "name": "I don\u0027t know (we will contact you)",
+            "identifier": "sporrs"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vij4v9",
+          "operator": "in",
+          "identifiers": [
+            "be7wsz"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Virtual Desktop",
+        "description": "Virtual Desktop charge will be charged through deletion date listed below. This charge will include email license charge.",
+        "identifier": "h9s4ed",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "t0v5mq"
+          },
+          {
+            "name": "No",
+            "identifier": "7fym66"
+          },
+          {
+            "name": "I Don\u0027t Know (we will contact you)",
+            "identifier": "lr152z"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vij4v9",
+          "operator": "in",
+          "identifiers": [
+            "be7wsz"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Network Drive",
+        "identifier": "f6329a",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "486h8k"
+          },
+          {
+            "name": "No",
+            "identifier": "1tm8l5"
+          },
+          {
+            "name": "I Don\u0027t Know (we will contact you)",
+            "identifier": "5zisxy"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vij4v9",
+          "operator": "in",
+          "identifiers": [
+            "be7wsz"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Virtual Desktop Deletion Date",
+        "description": "you do not have access to the virtual machine after this date, and will be charged for virtual desktop through this date.",
+        "identifier": "dbrrs8",
+        "required": false
+      },
+      {
+        "type": "long_text",
+        "name": "Other Information Needed",
+        "description": "please specify",
+        "identifier": "5p8013",
+        "required": false
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF5-0000-00000001703F"
+  }
+}

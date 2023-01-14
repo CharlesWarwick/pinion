@@ -1,0 +1,18 @@
+{
+  "entityId": "1-A",
+  "name": "Cassie\u0027s Test",
+  "tags": [],
+  "enabled": false,
+  "items": [],
+  "deletedItems": [],
+  "alerts": {
+    "onNegative": null
+  },
+  "meta": {
+    "updatedAt": "2023-01-13T22:54:44.6120356Z",
+    "updatedBy": {
+      "entityId": "m~264",
+      "name": "cyounker"
+    }
+  }
+}

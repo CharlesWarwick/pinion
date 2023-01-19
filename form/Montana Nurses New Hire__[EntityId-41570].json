@@ -14,6 +14,13 @@
     "fields": [
       {
         "type": "short_text",
+        "name": "Contact Requesting New Hire",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "nnysd1",
+        "required": false
+      },
+      {
+        "type": "short_text",
         "name": "Name of New Hire",
         "identifier": "hgi7lu",
         "required": false
@@ -27,6 +34,7 @@
       {
         "type": "email",
         "name": "Is an email address required?",
+        "description": "Format of *firstname@montananurses.org*",
         "identifier": "jxe7wa",
         "required": false
       },
@@ -105,6 +113,6 @@
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-000000016529"
+    "etag": "01000000-0000-1DF6-0000-00000000639B"
   }
 }

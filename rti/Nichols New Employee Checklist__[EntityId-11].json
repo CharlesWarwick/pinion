@@ -10,8 +10,10 @@
     ],
     "parentOptions": [
       "Account/Access",
+      "Draft Items",
       "Hardware",
       "Microsoft Office 365",
+      "On Boarding",
       "Software",
       "Starters and leavers"
     ],

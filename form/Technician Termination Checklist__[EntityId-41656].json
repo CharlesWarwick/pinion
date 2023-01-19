@@ -1,0 +1,160 @@
+{
+  "form": {
+    "entityId": 41656,
+    "name": "Technician Termination Checklist",
+    "description": "Please make sure these are all completed when doing a termination",
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [],
+    "fields": [
+      {
+        "type": "single_choice",
+        "name": "Did an Authorized Contact put the Termination form in?",
+        "description": "We should only be accepting Terminations from one of the listed Authorized contact.",
+        "identifier": "ijo6t9",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "qxi4am"
+          },
+          {
+            "name": "No",
+            "identifier": "dyweig"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Did you look at the Termination Form?",
+        "description": "Please verify that client filled out correctly.",
+        "identifier": "ufdk5k",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "isjjkf"
+          },
+          {
+            "name": "No",
+            "identifier": "phvdmh"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Is the password being reset?",
+        "description": "Did Client request to have employee\u0027s password reset?",
+        "identifier": "oj2mpd",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "jeznu5"
+          },
+          {
+            "name": "No",
+            "identifier": "b9zjkh"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "If so, what is it changing to?",
+        "description": "enter the password you changed to or client requested it to be?",
+        "identifier": "40w0wu",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Did the office license get removed?",
+        "identifier": "yvww0g",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "03b397"
+          },
+          {
+            "name": "No",
+            "identifier": "2mi24y"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Did the employees email get forwarded to another user?",
+        "description": "was this requested.",
+        "identifier": "w8gm2a",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "vvwezv"
+          },
+          {
+            "name": "No",
+            "identifier": "llryk9"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Did the Virtual Machine get deleted?",
+        "identifier": "qkb5qd",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "h0y5qg"
+          },
+          {
+            "name": "No",
+            "identifier": "9hkncr"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Were backups requested?",
+        "identifier": "wayosj",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "0a9yhs"
+          },
+          {
+            "name": "No",
+            "identifier": "gs530u"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Did they get marked Inactive in Manage?",
+        "description": "When Terminations are finished, we need to mark that contact Inactive in Manage under the company.",
+        "identifier": "5tla5e",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "9l6kyr"
+          },
+          {
+            "name": "No",
+            "identifier": "m1v1uz"
+          }
+        ]
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF6-0000-00000000625E"
+  }
+}

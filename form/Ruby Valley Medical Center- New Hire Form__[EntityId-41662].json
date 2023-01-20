@@ -1,0 +1,174 @@
+{
+  "form": {
+    "entityId": 41662,
+    "name": "Ruby Valley Medical Center: New Hire Form",
+    "description": null,
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [
+      "draft",
+      "rvmc"
+    ],
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Contact requesting new hire (First and Last name)",
+        "description": "Input your name here to indicate who is requesting the new hire. New hires are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
+        "identifier": "fwekhz",
+        "required": true
+      },
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "967nz8",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Name (first, middle initial, and last name)",
+        "description": "Type the first-name, middle-initial, and last-name of the new hire. Be sure to confirm spelling. A Full middle name is acceptable. This is a required field. \n*Example: Will B Smith*",
+        "identifier": "7suwwy",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "phone number",
+        "description": "cell phone\\desk number so we can call the user when they submit a ticket",
+        "identifier": "n1fes0",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Copy Existing Employee?",
+        "description": "If there is an existing employee that has the same drive mapping and email distribution groups we can copy this user for the new user.",
+        "identifier": "2wv1hm",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes",
+            "selected": true
+          },
+          {
+            "name": "No",
+            "identifier": "no",
+            "selected": true
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the Employee",
+        "description": "This is the user we will copy for the new employee.",
+        "identifier": "uyu8lr",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "2wv1hm",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Enter the name of the permissions",
+        "description": "This is where you put the exact permissions needed on a user as we are not copying them",
+        "identifier": "2mplx7",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "2wv1hm",
+          "operator": "in",
+          "identifiers": [
+            "no"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Position Title",
+        "description": "Enter the Position or Title of the employee.",
+        "identifier": "si5gsz",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Additional Hardware (if applicable)",
+        "description": "Is there any additional hardware that is needed beside the above hardware setup.",
+        "identifier": "vr1l33",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Hardware needed",
+        "description": "Please tell us what a hardware the user is going to need in addition to what they have",
+        "identifier": "i19t69",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "vr1l33",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Any additional software required",
+        "description": "select yes if any specific software needs to be prepared or installed for the new user.",
+        "identifier": "nia7gg",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "List software requirements",
+        "description": "List software that will need to installed",
+        "identifier": "k0i2y2",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "nia7gg",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF6-0000-0000000076E7"
+  }
+}

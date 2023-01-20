@@ -4,13 +4,17 @@
     "name": "[Default] New Hire Checklist",
     "description": "Default Template",
     "titleFormat": {
-      "format": "{Caleb} requested by {Cassie} {1} {2}",
+      "format": "{3} Needs a new hire for {2} who starts on {4}",
       "arguments": [
         "service_catalogue",
-        "contact_name"
+        "contact_name",
+        "company_name",
+        "gxdl23"
       ]
     },
-    "tags": [],
+    "tags": [
+      "draft"
+    ],
     "fields": [
       {
         "type": "date",
@@ -23,10 +27,27 @@
         }
       },
       {
+        "type": "date",
+        "name": "Start Date",
+        "description": "Enter the expected start date for the new user",
+        "identifier": "gxdl23",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
         "type": "short_text",
         "name": "Name (first, middle initial, and last name)",
         "description": "Complete and fully spelled names when possible",
         "identifier": "41k6ve",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "description": "Please enter what office this employee will be located.",
+        "identifier": "rx6qt1",
         "required": false
       },
       {
@@ -52,7 +73,7 @@
       {
         "type": "short_text",
         "name": "Email Address format",
-        "description": "Enter the actual email address(s) requested. Selection will be used in priority order\nExamples\nfirstnamelastname@email.com",
+        "description": "Enter the actual email address(s) requested. Selection will be used in priority order\nExamples\n*firstnamelastname@email.com*",
         "identifier": "0jhz5u",
         "required": false,
         "condition": {
@@ -65,44 +86,207 @@
         }
       },
       {
-        "type": "short_text",
-        "name": "Office Location",
-        "identifier": "bf39tg",
-        "required": false
-      },
-      {
-        "type": "date",
-        "name": "Start Date",
-        "description": "Enter the expected start date for the new user",
-        "identifier": "gxdl23",
-        "required": false,
-        "meta": {
-          "render": "date_time"
-        }
-      },
-      {
         "type": "single_choice",
-        "name": "Is a virtual desktop requested",
-        "identifier": "jxra6o",
+        "name": "User Requesting Phone Number",
+        "identifier": "3o47fk",
         "required": false,
         "choices": [
           {
             "name": "Yes",
-            "identifier": "0wtwy8"
+            "identifier": "yes"
           },
           {
             "name": "No",
-            "identifier": "dpg9wf"
-          },
-          {
-            "name": "I am not sure, contact me",
-            "identifier": "c1lhzq"
+            "identifier": "no"
           }
         ]
+      },
+      {
+        "type": "short_text",
+        "name": "What Number are you requesting?",
+        "identifier": "ealt63",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "3o47fk",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Cell phone number",
+        "description": "Please enter the employee\u0027s cell phone number",
+        "identifier": "mjckjo",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "What is the Position/Title of employee?",
+        "description": "What will their title be.",
+        "identifier": "biptf4",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Copy Existing Employee?",
+        "description": "If there is an existing employee that has the same drive mapping and email distribution groups we can copy this user for the new user.",
+        "identifier": "ui61a5",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "x7j6d8"
+          },
+          {
+            "name": "No",
+            "identifier": "9j3hzi"
+          }
+        ]
+      },
+      {
+        "type": "api_single_select",
+        "name": "Enter name of Employee",
+        "description": "This is the user we will copy for the new employee.",
+        "identifier": "ycscfc",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "ui61a5",
+          "operator": "in",
+          "identifiers": [
+            "x7j6d8"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Is Hardware Needed?",
+        "identifier": "ija31o",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "5vow00"
+          },
+          {
+            "name": "No",
+            "identifier": "toqrmh"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Hardware Needed",
+        "description": "Please tell us what hardware is needed for this employee?",
+        "identifier": "djdlno",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "ija31o",
+          "operator": "in",
+          "identifiers": [
+            "5vow00"
+          ]
+        }
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Mapped Drives",
+        "identifier": "si6zw4",
+        "required": false,
+        "choices": [
+          {
+            "name": "Option 1",
+            "identifier": "4lcjt5"
+          },
+          {
+            "name": "Option 3",
+            "identifier": "r4l4bn"
+          },
+          {
+            "name": "Option 3",
+            "identifier": "1z4562"
+          },
+          {
+            "name": "Option 4",
+            "identifier": "5uh13s"
+          },
+          {
+            "name": "Option 5",
+            "identifier": "6pjbch"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Software/Programs",
+        "identifier": "2auihz",
+        "required": false,
+        "choices": [
+          {
+            "name": "Option 1",
+            "identifier": "le27qi"
+          },
+          {
+            "name": "Option 2",
+            "identifier": "nxamp6"
+          },
+          {
+            "name": "Option 3",
+            "identifier": "drh4k4"
+          },
+          {
+            "name": "Option 4",
+            "identifier": "kpulwy"
+          }
+        ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Email Distribution Groups",
+        "identifier": "xlbgqk",
+        "required": false,
+        "choices": [
+          {
+            "name": "Option 1",
+            "identifier": "w08ila"
+          },
+          {
+            "name": "Option 2",
+            "identifier": "q1opdx"
+          },
+          {
+            "name": "Option 3",
+            "identifier": "xja17h"
+          },
+          {
+            "name": "Option 4",
+            "identifier": "wxdeix"
+          },
+          {
+            "name": "Option 5",
+            "identifier": "x9gw82"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Any Additional Information?",
+        "description": "Please include any information that we missed that is vital to this New Employee.",
+        "identifier": "dow5ri",
+        "required": false
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-00000001703E"
+    "etag": "01000000-0000-1DF6-0000-000000007C9F"
   }
 }

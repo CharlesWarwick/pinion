@@ -10,7 +10,10 @@
         "contact_name"
       ]
     },
-    "tags": [],
+    "tags": [
+      "draft",
+      "mna"
+    ],
     "fields": [
       {
         "type": "short_text",
@@ -42,6 +45,6 @@
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-000000016097"
+    "etag": "01000000-0000-1DF6-0000-000000007513"
   }
 }

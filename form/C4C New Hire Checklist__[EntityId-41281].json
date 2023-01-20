@@ -22,6 +22,13 @@
       },
       {
         "type": "short_text",
+        "name": "Title or Position for the employee",
+        "description": "This will be used for the Signature in Email for the employee.",
+        "identifier": "nrvbcn",
+        "required": false
+      },
+      {
+        "type": "short_text",
         "name": "Office Phone Number",
         "description": "Enter the office phone number if known.",
         "identifier": "t9fezz",
@@ -36,7 +43,8 @@
       },
       {
         "type": "short_text",
-        "name": "Office Location",
+        "name": "Office Location - For use with email signature",
+        "description": "This will be used for the Signature in the Email for the employee.",
         "identifier": "bf39tg",
         "required": false
       },
@@ -62,15 +70,15 @@
             "identifier": "dzssa4"
           },
           {
-            "name": "Catalyst Files",
+            "name": "Executive",
             "identifier": "jqnel8"
           },
           {
-            "name": "Operations Programs",
+            "name": "CHW",
             "identifier": "b8bhct"
           },
           {
-            "name": "CHW Program",
+            "name": "Staff",
             "identifier": "pauylg"
           },
           {
@@ -115,10 +123,65 @@
             "identifier": "dir5s0"
           }
         ]
+      },
+      {
+        "type": "single_choice",
+        "name": "Does this user need an Adobe Pro License?",
+        "description": "Do we need to order an Adobe license for this user?",
+        "identifier": "my1d59",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "ew7kb0"
+          },
+          {
+            "name": "No",
+            "identifier": "pfpgsj"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "name": "Do they need a Windows Laptop?",
+        "description": "Does the new employee need a Windows laptop and or a Chromebook laptop",
+        "identifier": "wtile1",
+        "required": false,
+        "choices": [
+          {
+            "name": "Windows Laptop",
+            "identifier": "nv83rn"
+          },
+          {
+            "name": "Chromebook Laptop",
+            "identifier": "l8n8io"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Additional Hardware Needed",
+        "description": "If there is additional hardware needed please enter it here.",
+        "identifier": "8838g8",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Mailing Address for equipment",
+        "description": "This will be used to mail equipment to if needed.",
+        "identifier": "2uhi3k",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Is there any other information you would like to add?",
+        "description": "Add any other information that we should have for this new employee",
+        "identifier": "ywtz32",
+        "required": false
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF5-0000-000000002064"
+    "etag": "01000000-0000-1DF6-0000-000000007FDF"
   }
 }

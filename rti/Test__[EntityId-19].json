@@ -1,0 +1,36 @@
+{
+  "general": {
+    "entityId": 19,
+    "enabled": false,
+    "parentName": "Test",
+    "name": "Test",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers",
+      "Test"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41048,
+      "name": "[Default] New Hire Checklist"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 19,
+    "name": "Test",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-19T19:19:31.192229Z"
+}

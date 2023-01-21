@@ -15,7 +15,10 @@
       "On Boarding",
       "Software",
       "Starters and leavers",
-      "Test"
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
     ],
     "titleTemplate": null,
     "bodyTemplate": null,
@@ -25,7 +28,12 @@
       "entityId": 41041,
       "name": "DD Forms Showcase - An Employee is Leaving"
     },
-    "taskTemplates": []
+    "taskTemplates": [
+      {
+        "entityId": "33-A",
+        "name": "Termination Checklist"
+      }
+    ]
   },
   "ticket": {},
   "filter": {
@@ -34,5 +42,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2022-12-15T05:54:40.2532555Z"
+  "lastModifiedAt": "2023-01-20T22:56:15.7159799Z"
 }

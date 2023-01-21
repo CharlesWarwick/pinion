@@ -17,15 +17,32 @@
       "status": null,
       "priority": null,
       "lastModifiedAt": "2022-12-28T17:40:21.1545452Z"
+    },
+    {
+      "entityId": 12,
+      "parentName": "Starters and leavers",
+      "name": "Employee Leaving",
+      "tags": [
+        "hr"
+      ],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-20T22:56:15.7159799Z"
     }
   ],
   "meta": {
-    "updatedAt": "2022-12-28T16:23:34.5804774Z",
+    "updatedAt": "2023-01-20T23:01:21.3775077Z",
     "updatedBy": {
-      "entityId": "m~157",
-      "name": "dgarber"
+      "entityId": "m~264",
+      "name": "cyounker"
     },
-    "companyCount": 0,
+    "companyCount": 1,
     "contactCount": 0,
     "teamCount": 0
   }

@@ -1,0 +1,32 @@
+{
+  "form": {
+    "entityId": 41695,
+    "name": "DD Forms Showcase - Quote Request (copy)",
+    "description": null,
+    "titleFormat": null,
+    "fields": [
+      {
+        "type": "short_text",
+        "name": "Item:",
+        "identifier": "qmgqv7",
+        "required": true,
+        "validations": []
+      },
+      {
+        "type": "number",
+        "name": "Quantity:",
+        "identifier": "tfjb9g",
+        "required": true
+      },
+      {
+        "type": "short_text",
+        "name": "Additional comments:",
+        "identifier": "z0aii2",
+        "required": false,
+        "validations": []
+      }
+    ],
+    "readonly": false,
+    "etag": "01000000-0000-1DF6-0000-000000009223"
+  }
+}

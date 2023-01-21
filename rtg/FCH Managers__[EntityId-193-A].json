@@ -1,0 +1,64 @@
+{
+  "entityId": "193-A",
+  "name": "FCH Managers",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 20,
+      "parentName": null,
+      "name": "New Hire Form: FCH",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-20T17:26:33.9832479Z"
+    },
+    {
+      "entityId": 12,
+      "parentName": "Starters and leavers",
+      "name": "Employee Leaving",
+      "tags": [
+        "hr"
+      ],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-20T22:56:15.7159799Z"
+    },
+    {
+      "entityId": 23,
+      "parentName": "Urgent - Cannot Work",
+      "name": "FCH - Urgent",
+      "tags": [],
+      "enabled": true,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-20T21:04:18.7252857Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2023-01-20T21:14:37.9929423Z",
+    "updatedBy": {
+      "entityId": "m~264",
+      "name": "cyounker"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 1
+  }
+}

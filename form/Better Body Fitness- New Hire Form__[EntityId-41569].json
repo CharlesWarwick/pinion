@@ -16,13 +16,6 @@
     ],
     "fields": [
       {
-        "type": "short_text",
-        "name": "Contact requesting new hire (First and Last name)",
-        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
-        "identifier": "waf5zc",
-        "required": true
-      },
-      {
         "type": "date",
         "name": "Submission Date",
         "description": "Enter today\u0027s date for the New User Request",
@@ -33,17 +26,39 @@
         }
       },
       {
-        "type": "short_text",
+        "type": "date",
+        "name": "Start Date",
+        "description": "Enter the expected start date for the new user",
+        "identifier": "t0f54e",
+        "required": false,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "api_single_select",
         "name": "Name (first, middle initial, and last name)",
         "description": "Type the first-name, middle-initial, and last-name of the new hire. Be sure to confirm spelling. A Full middle name is acceptable. This is a required field. \n*Example: Will B Smith*",
-        "identifier": "4clrkt",
-        "required": true
+        "identifier": "o83wdl",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        }
       },
       {
         "type": "short_text",
         "name": "phone number",
         "description": "cell phone\\desk number so we can call the user when they submit a ticket",
         "identifier": "wyt4ng",
+        "required": false
+      },
+      {
+        "type": "short_text",
+        "name": "Position Title",
+        "description": "Enter the Position or Title of the employee.",
+        "identifier": "ioey9d",
         "required": false
       },
       {
@@ -130,11 +145,16 @@
         ]
       },
       {
-        "type": "short_text",
+        "type": "api_single_select",
         "name": "Enter the name of the Employee",
         "description": "This is the user we will copy for the new employee.",
-        "identifier": "c5u5r8",
-        "required": true,
+        "identifier": "pi2xat",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
         "condition": {
           "parentId": "base_section",
           "parentFieldId": "6t40pc",
@@ -158,13 +178,6 @@
             "no"
           ]
         }
-      },
-      {
-        "type": "short_text",
-        "name": "Position Title",
-        "description": "Enter the Position or Title of the employee.",
-        "identifier": "ioey9d",
-        "required": false
       },
       {
         "type": "single_choice",
@@ -233,6 +246,6 @@
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF6-0000-000000007D20"
+    "etag": "01000000-0000-1DF6-0000-000000009724"
   }
 }

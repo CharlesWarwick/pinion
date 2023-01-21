@@ -4,50 +4,54 @@
     "name": "Florence Crittention New Hire",
     "description": "Testing form",
     "titleFormat": {
-      "format": "{1} requested by {2}",
+      "format": "{1} for {3} - {2} is starting on {4}",
       "arguments": [
         "service_catalogue",
-        "contact_name"
+        "contact_name",
+        "company_name",
+        "25xwq8"
       ]
     },
     "tags": [
+      "draft",
       "fch"
     ],
     "fields": [
       {
-        "type": "short_text",
-        "name": "Contact Requesting New Hire",
-        "description": "Input your name here to indicate who is requesting the new hire. New hires and terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
-        "identifier": "z532c2",
-        "required": false
-      },
-      {
-        "type": "single_choice",
-        "name": "Name of New Employee",
-        "description": "Enter Employees Given Name",
-        "identifier": "0hg2ug",
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "fg86cr",
         "required": true,
-        "choices": [
-          {
-            "name": "Enter if Employee has a Nickname",
-            "identifier": "ue9oeo"
-          }
-        ],
         "meta": {
-          "render": "radio"
+          "render": "date_time"
         }
       },
       {
-        "type": "single_choice",
-        "name": "Enter Start Date",
-        "identifier": "25xwq8",
+        "type": "date",
+        "name": "Deadline Date",
+        "description": "When you would like the new employee to be setup by. \nEx: if the person starts on 01/23 would you like it setup by 01/19 so you have time to test and setup any other items.",
+        "identifier": "tjizmb",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Employee\u0027s Start Date",
+        "description": "When they Employee begins work.",
+        "identifier": "umyyxt",
         "required": false,
-        "choices": [
-          {
-            "name": "unknown option",
-            "identifier": "c9k3wp"
-          }
-        ]
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "short_text",
+        "name": "Enter Employee\u0027s Name",
+        "identifier": "sarrf2",
+        "required": false
       },
       {
         "type": "email",
@@ -142,7 +146,13 @@
         "required": false
       },
       {
-        "type": "single_choice",
+        "type": "short_text",
+        "name": "New question title, please modify this.",
+        "identifier": "96phwi",
+        "required": false
+      },
+      {
+        "type": "multiple_choice",
         "name": "Drive Mappings",
         "description": "Check the Drive Mappings that the new employee will need access to",
         "identifier": "1s2swg",
@@ -227,7 +237,7 @@
         ]
       },
       {
-        "type": "single_choice",
+        "type": "multiple_choice",
         "name": "Email Distribution Groups",
         "description": "Which email Distribution groups will the employee need to be added to?",
         "identifier": "mz12cc",
@@ -256,7 +266,7 @@
         ]
       },
       {
-        "type": "single_choice",
+        "type": "multiple_choice",
         "name": "Software Programs Needed",
         "description": "Which software does the employee need?",
         "identifier": "tjbs2y",
@@ -275,7 +285,7 @@
             "identifier": "23wsjq"
           },
           {
-            "name": "O",
+            "name": "Office 365",
             "identifier": "j1op6v"
           },
           {
@@ -285,7 +295,7 @@
         ]
       },
       {
-        "type": "single_choice",
+        "type": "multiple_choice",
         "name": "Hardware Setup Type",
         "description": "Which hardware setup does the employee need",
         "identifier": "cy8uwi",
@@ -318,6 +328,6 @@
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF6-0000-000000006380"
+    "etag": "01000000-0000-1DF6-0000-000000009621"
   }
 }

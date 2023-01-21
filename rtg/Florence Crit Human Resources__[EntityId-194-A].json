@@ -1,0 +1,36 @@
+{
+  "entityId": "194-A",
+  "name": "Florence Crit Human Resources",
+  "tags": [
+    "fch"
+  ],
+  "items": [
+    {
+      "entityId": 21,
+      "parentName": null,
+      "name": "New Hire - Florence Crittenton",
+      "tags": [
+        "fch"
+      ],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-20T16:30:10.8061381Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2023-01-20T16:35:49.1957934Z",
+    "updatedBy": {
+      "entityId": "m~157",
+      "name": "dgarber"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 0
+  }
+}

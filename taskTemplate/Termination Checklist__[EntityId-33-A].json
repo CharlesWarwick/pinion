@@ -1,0 +1,57 @@
+{
+  "entityId": "33-A",
+  "name": "Termination Checklist",
+  "isPrivate": true,
+  "tags": [],
+  "filter": {
+    "companies": [
+      {
+        "entityId": 19297,
+        "name": "XYZ Test Company"
+      }
+    ]
+  },
+  "items": [
+    {
+      "instruction": "Did an authorized contact put this request in",
+      "description": null
+    },
+    {
+      "instruction": "Did you verify it was filled out correctly?",
+      "description": null
+    },
+    {
+      "instruction": "Was a password reset requested?",
+      "description": null
+    },
+    {
+      "instruction": "Is the Office License being removed?",
+      "description": null
+    },
+    {
+      "instruction": "Is email being forwarded?",
+      "description": null
+    },
+    {
+      "instruction": "Backups - if requested",
+      "description": null
+    },
+    {
+      "instruction": "Virtual Machine deleted?",
+      "description": null
+    },
+    {
+      "instruction": "Marked Inactive in Manage",
+      "description": null
+    }
+  ],
+  "creator": {
+    "entityId": "m~264",
+    "name": "cyounker"
+  },
+  "lastModifiedAt": "2023-01-20T23:10:44.1120118Z",
+  "lastModifiedBy": {
+    "entityId": "m~264",
+    "name": "cyounker"
+  }
+}

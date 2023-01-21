@@ -1,0 +1,160 @@
+{
+  "form": {
+    "entityId": 41693,
+    "name": "I need to make a booking with a Tech (copy)",
+    "description": null,
+    "titleFormat": null,
+    "tags": [],
+    "fields": [
+      {
+        "type": "api_single_select",
+        "name": "Select your Time Zone",
+        "identifier": "dd-booking-timeZone",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "https://dd-tech-booking.azurewebsites.net/api/lookup/timezone",
+          "queryParams": null
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Select your Date Range",
+        "identifier": "dd-booking-dateRange",
+        "required": true,
+        "choices": [
+          {
+            "name": "This Week",
+            "identifier": "week00"
+          },
+          {
+            "name": "Next Week",
+            "identifier": "week01"
+          },
+          {
+            "name": "The Week After",
+            "identifier": "week02"
+          },
+          {
+            "name": "Custom",
+            "identifier": "custom"
+          }
+        ],
+        "meta": {
+          "render": "dropdown"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Select your Start Date range",
+        "identifier": "dd-booking-startdate",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "dd-booking-dateRange",
+          "operator": "in",
+          "identifiers": [
+            "custom"
+          ]
+        },
+        "meta": {
+          "render": "date"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Select your End Date range",
+        "identifier": "dd-booking-enddate",
+        "required": true,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "dd-booking-dateRange",
+          "operator": "in",
+          "identifiers": [
+            "custom"
+          ]
+        },
+        "meta": {
+          "render": "date"
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Select your Duration",
+        "identifier": "dd-booking-duration",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "https://dd-tech-booking.azurewebsites.net/api/lookup/bookingduration",
+          "queryParams": null
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Select your Tech",
+        "identifier": "dd-booking-tech",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "https://dd-tech-booking.azurewebsites.net/api/lookup/user/demomsp9?secretToken=9-reZAC8VkeBasC_A_GzHA",
+          "queryParams": null
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Select your Booking",
+        "identifier": "dd-booking-date",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "https://dd-tech-booking.azurewebsites.net/api/filter/demomsp9?secretToken=9-reZAC8VkeBasC_A_GzHA\u0026dd-booking-timeZone\u0026dd-booking-dateRange\u0026dd-booking-duration\u0026dd-booking-tech",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "dd-booking-dateRange",
+          "operator": "in",
+          "identifiers": [
+            "week00",
+            "week01",
+            "week02"
+          ]
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Select your Booking",
+        "identifier": "dd-booking-date-2",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "https://dd-tech-booking.azurewebsites.net/api/filterrange/demomsp9?secretToken=9-reZAC8VkeBasC_A_GzHA\u0026dd-booking-timeZone\u0026dd-booking-startdate\u0026dd-booking-enddate\u0026dd-booking-duration\u0026dd-booking-tech",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "dd-booking-dateRange",
+          "operator": "in",
+          "identifiers": [
+            "custom"
+          ]
+        }
+      },
+      {
+        "type": "long_text",
+        "name": "Additional Notes (Optional)",
+        "identifier": "dd-booking-notes",
+        "required": false
+      },
+      {
+        "type": "file",
+        "name": "Attachments",
+        "identifier": "dd-booking-files",
+        "required": false
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF6-0000-0000000091A9"
+  }
+}

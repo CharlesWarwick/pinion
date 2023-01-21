@@ -1,0 +1,41 @@
+{
+  "general": {
+    "entityId": 21,
+    "enabled": false,
+    "parentName": null,
+    "name": "New Hire - Florence Crittenton",
+    "tags": [
+      "fch"
+    ],
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers",
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41442,
+      "name": "Florence Crittention New Hire"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 21,
+    "name": "New Hire - Florence Crittenton",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-20T16:30:10.8061381Z"
+}

@@ -1,0 +1,36 @@
+{
+  "general": {
+    "entityId": 22,
+    "enabled": false,
+    "parentName": "Urgent",
+    "name": "FCH- Urgency",
+    "tags": null,
+    "parentOptions": [
+      "Account/Access",
+      "Draft Items",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers",
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": null,
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 22,
+    "name": "FCH- Urgency",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-20T20:29:20.7600548Z"
+}

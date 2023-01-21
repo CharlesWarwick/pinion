@@ -10,15 +10,11 @@
         "contact_name"
       ]
     },
-    "tags": [],
+    "tags": [
+      "bbf",
+      "draft"
+    ],
     "fields": [
-      {
-        "type": "short_text",
-        "name": "Contact requesting new hire (First and Last name)",
-        "description": "Input your name here to indicate who is requesting the Termination. terminations are limited to **Authorized** personnel. Input your first and Last name so we can confirm you are authorized to make the request.\n*Example: John Doe*",
-        "identifier": "i54ezu",
-        "required": true
-      },
       {
         "type": "date",
         "name": "Submission Date",
@@ -40,17 +36,15 @@
         }
       },
       {
-        "type": "short_text",
-        "name": "Termination Time",
-        "description": "Enter time time you want the account locked at",
-        "identifier": "1nwpf5",
-        "required": false
-      },
-      {
-        "type": "short_text",
-        "name": "Contact Requesting Termination (First and last Name)",
-        "identifier": "rf0dav",
-        "required": true
+        "type": "api_single_select",
+        "name": "Employee Name That\u0027s being Terminated",
+        "identifier": "hzzl8e",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        }
       },
       {
         "type": "single_choice",
@@ -76,6 +70,94 @@
       },
       {
         "type": "single_choice",
+        "name": "Would you like to keep the users Computer login Active",
+        "identifier": "jz4eup",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Password Reset for the user after they leave",
+        "description": "type in the password you would like to use on the account",
+        "identifier": "4bcwxt",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "jz4eup",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does their Email need to be Saved?",
+        "description": "If you select no all email on the users account will be removed",
+        "identifier": "px9i2q",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "api_multi_select",
+        "name": "Does the Email need to be forwarded",
+        "description": "Please select the contacts you want the email to be forwarded to",
+        "identifier": "lgfbx8",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "px9i2q",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Does someone need access to there old Emails",
+        "description": "Enter the users that need access to the users old emails",
+        "identifier": "2iis8i",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "px9i2q",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
         "name": "Does this person have any software licenses that need to be decommissioned?",
         "description": "If Yes, please specify which licenses on the next question.",
         "identifier": "i9kb5h",
@@ -93,7 +175,7 @@
       },
       {
         "type": "short_text",
-        "name": "Which licenses need to be decommissioned?",
+        "name": "Which Software licenses need to be decommissioned?",
         "identifier": "1xvqod",
         "required": false,
         "condition": {
@@ -110,7 +192,7 @@
         "name": "Does their data need to be backed up?",
         "description": "If Yes, please specify who needs access to the data backed up on the next question.",
         "identifier": "7awlle",
-        "required": false,
+        "required": true,
         "choices": [
           {
             "name": "Yes",
@@ -154,19 +236,19 @@
       },
       {
         "type": "short_text",
-        "name": "If you would like the password set to something specific enter here",
-        "identifier": "wbhv9l",
+        "name": "Have we missed something? Use this field for additional notes:",
+        "identifier": "n1xbn9",
         "required": false
       },
       {
-        "type": "short_text",
-        "name": "Have we missed something? Use this field for additional notes:",
-        "identifier": "n1xbn9",
+        "type": "signature",
+        "name": "Please sign below and click Finish when finished.",
+        "identifier": "fkxmne",
         "required": false
       }
     ],
     "readonly": false,
     "sections": [],
-    "etag": "01000000-0000-1DF6-0000-000000006280"
+    "etag": "01000000-0000-1DF6-0000-000000009A90"
   }
 }

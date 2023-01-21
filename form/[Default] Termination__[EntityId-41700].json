@@ -1,0 +1,282 @@
+{
+  "form": {
+    "entityId": 41700,
+    "name": "[Default] Termination",
+    "description": null,
+    "titleFormat": {
+      "format": "{1} requested by {2}",
+      "arguments": [
+        "service_catalogue",
+        "contact_name"
+      ]
+    },
+    "tags": [
+      "draft"
+    ],
+    "fields": [
+      {
+        "type": "date",
+        "name": "Submission Date",
+        "description": "Enter today\u0027s date for the New User Request",
+        "identifier": "m593lm",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "date",
+        "name": "Termination date",
+        "description": "Enter the day of the users last day",
+        "identifier": "mpw4h9",
+        "required": true,
+        "meta": {
+          "render": "date_time"
+        }
+      },
+      {
+        "type": "api_single_select",
+        "name": "Employee Name That\u0027s being Terminated",
+        "identifier": "qamt9c",
+        "required": true,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Termination type",
+        "identifier": "ar7aff",
+        "required": false,
+        "choices": [
+          {
+            "name": "Voluntary",
+            "identifier": "yes"
+          },
+          {
+            "name": "Involuntary",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Office Location",
+        "identifier": "02y7f2",
+        "required": false
+      },
+      {
+        "type": "single_choice",
+        "name": "Would you like to keep the users Computer login Active",
+        "identifier": "3hq1ca",
+        "required": false,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Password Reset for the user after they leave",
+        "description": "type in the password you would like to use on the account",
+        "identifier": "t4m05d",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "3hq1ca",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does their Email need to be Saved?",
+        "description": "If you select no all email\u0027s on the users account will be removed",
+        "identifier": "q9jjph",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "api_multi_select",
+        "name": "Does the Email need to be forwarded",
+        "description": "Please select the contacts you want the email to be forwarded to",
+        "identifier": "m4ruco",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "q9jjph",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Would you like us to block all sign in attempts",
+        "identifier": "i8z51r",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ],
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "q9jjph",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "api_multi_select",
+        "name": "Who requires access to the historical emails?",
+        "description": "Enter the users that need access to the users old emails",
+        "identifier": "mi5bux",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "q9jjph",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does this person have any software licenses that need to be decommissioned?",
+        "description": "If Yes, please specify which licenses on the next question.",
+        "identifier": "9y2z8d",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Which Software licenses need to be decommissioned?",
+        "identifier": "4ynyw6",
+        "required": false,
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "9y2z8d",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Does their computer data need to be backed up?",
+        "description": "If Yes, please specify who needs access to the data backed up on the next question.",
+        "identifier": "2whtie",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "api_multi_select",
+        "name": "Who needs access to the backed up data?",
+        "identifier": "9f4rcp",
+        "required": false,
+        "api": {
+          "method": "GET",
+          "url": "/api/v2/ddform/dynamic/contacts",
+          "queryParams": null
+        },
+        "condition": {
+          "parentId": "base_section",
+          "parentFieldId": "2whtie",
+          "operator": "in",
+          "identifiers": [
+            "yes"
+          ]
+        }
+      },
+      {
+        "type": "single_choice",
+        "name": "Do you require us to wipe their computer?",
+        "identifier": "zlq5lt",
+        "required": true,
+        "choices": [
+          {
+            "name": "Yes",
+            "identifier": "yes"
+          },
+          {
+            "name": "No",
+            "identifier": "no"
+          }
+        ]
+      },
+      {
+        "type": "short_text",
+        "name": "Have we missed something? Use this field for additional notes:",
+        "identifier": "ju0a7c",
+        "required": false
+      },
+      {
+        "type": "signature",
+        "name": "Please sign below and click Finish when finished.",
+        "identifier": "fp8ncd",
+        "required": true
+      }
+    ],
+    "readonly": false,
+    "sections": [],
+    "etag": "01000000-0000-1DF6-0000-000000009B04"
+  }
+}

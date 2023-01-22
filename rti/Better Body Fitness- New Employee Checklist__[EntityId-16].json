@@ -4,7 +4,10 @@
     "enabled": false,
     "parentName": null,
     "name": "Better Body Fitness: New Employee Checklist",
-    "tags": [],
+    "tags": [
+      "bbf",
+      "draft"
+    ],
     "parentOptions": [
       "Account/Access",
       "Draft Items",
@@ -12,7 +15,11 @@
       "Microsoft Office 365",
       "On Boarding",
       "Software",
-      "Starters and leavers"
+      "Starters and leavers",
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
     ],
     "titleTemplate": null,
     "bodyTemplate": null,
@@ -31,5 +38,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-13T16:45:39.157056Z"
+  "lastModifiedAt": "2023-01-20T20:29:32.635931Z"
 }

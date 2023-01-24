@@ -11,6 +11,7 @@
     "parentOptions": [
       "Account/Access",
       "Draft Items",
+      "FCH Managers",
       "Hardware",
       "Microsoft Office 365",
       "On Boarding",
@@ -29,7 +30,12 @@
       "entityId": 41159,
       "name": "Nichols New Hire Checklist"
     },
-    "taskTemplates": []
+    "taskTemplates": [
+      {
+        "entityId": "33-A",
+        "name": "Termination Checklist"
+      }
+    ]
   },
   "ticket": {
     "connectWise": {
@@ -69,5 +75,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-03T19:30:37.3443705Z"
+  "lastModifiedAt": "2023-01-23T16:35:00.6380231Z"
 }

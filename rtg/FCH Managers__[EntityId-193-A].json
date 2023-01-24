@@ -19,13 +19,11 @@
       "lastModifiedAt": "2023-01-20T17:26:33.9832479Z"
     },
     {
-      "entityId": 12,
-      "parentName": "Starters and leavers",
-      "name": "Employee Leaving",
-      "tags": [
-        "hr"
-      ],
-      "enabled": false,
+      "entityId": 25,
+      "parentName": "FCH Managers",
+      "name": "Authorized Form",
+      "tags": [],
+      "enabled": true,
       "useFormUrl": false,
       "formType": "native",
       "filterRootFlag": true,
@@ -33,7 +31,24 @@
       "board": null,
       "status": null,
       "priority": null,
-      "lastModifiedAt": "2023-01-20T22:56:15.7159799Z"
+      "lastModifiedAt": "2023-01-23T21:53:06.6057865Z"
+    },
+    {
+      "entityId": 12,
+      "parentName": "Starters and leavers",
+      "name": "Employee Leaving",
+      "tags": [
+        "hr"
+      ],
+      "enabled": true,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-23T16:39:21.0007798Z"
     },
     {
       "entityId": 23,
@@ -52,7 +67,7 @@
     }
   ],
   "meta": {
-    "updatedAt": "2023-01-20T21:14:37.9929423Z",
+    "updatedAt": "2023-01-23T21:54:18.9484429Z",
     "updatedBy": {
       "entityId": "m~264",
       "name": "cyounker"

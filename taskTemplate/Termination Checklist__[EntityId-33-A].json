@@ -2,7 +2,9 @@
   "entityId": "33-A",
   "name": "Termination Checklist",
   "isPrivate": true,
-  "tags": [],
+  "tags": [
+    "draft"
+  ],
   "filter": {
     "companies": [
       {
@@ -49,9 +51,9 @@
     "entityId": "m~264",
     "name": "cyounker"
   },
-  "lastModifiedAt": "2023-01-20T23:10:44.1120118Z",
+  "lastModifiedAt": "2023-01-23T16:42:03.799005Z",
   "lastModifiedBy": {
-    "entityId": "m~264",
-    "name": "cyounker"
+    "entityId": "m~197",
+    "name": "chawks"
   }
 }

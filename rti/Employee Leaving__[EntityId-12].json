@@ -1,7 +1,7 @@
 {
   "general": {
     "entityId": 12,
-    "enabled": false,
+    "enabled": true,
     "parentName": "Starters and leavers",
     "name": "Employee Leaving",
     "tags": [
@@ -10,6 +10,7 @@
     "parentOptions": [
       "Account/Access",
       "Draft Items",
+      "FCH Managers",
       "Hardware",
       "Microsoft Office 365",
       "On Boarding",
@@ -42,5 +43,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-20T22:56:15.7159799Z"
+  "lastModifiedAt": "2023-01-23T16:39:21.0007798Z"
 }

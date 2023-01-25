@@ -1,0 +1,62 @@
+{
+  "entityId": "225-A",
+  "name": "[Default] New Hire/Termination/Authorization form\u0027s",
+  "tags": [],
+  "items": [
+    {
+      "entityId": 27,
+      "parentName": null,
+      "name": "[Default] Authorized From",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-24T21:06:35.5786559Z"
+    },
+    {
+      "entityId": 26,
+      "parentName": null,
+      "name": "[Default] New Hire Checklist",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-24T21:04:17.3523337Z"
+    },
+    {
+      "entityId": 28,
+      "parentName": null,
+      "name": "[Default] Termination",
+      "tags": [],
+      "enabled": false,
+      "useFormUrl": false,
+      "formType": "native",
+      "filterRootFlag": true,
+      "filterHasException": false,
+      "board": null,
+      "status": null,
+      "priority": null,
+      "lastModifiedAt": "2023-01-24T21:07:19.2284428Z"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2023-01-24T21:14:35.5003618Z",
+    "updatedBy": {
+      "entityId": "m~197",
+      "name": "chawks"
+    },
+    "companyCount": 0,
+    "contactCount": 0,
+    "teamCount": 1
+  }
+}

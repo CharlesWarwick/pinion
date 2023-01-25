@@ -1,0 +1,41 @@
+{
+  "general": {
+    "entityId": 26,
+    "enabled": false,
+    "parentName": null,
+    "name": "[Default] New Hire Checklist",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Better Body Fitness",
+      "Draft Items",
+      "FCH Managers",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers",
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41048,
+      "name": "[Default] New Hire Checklist"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 26,
+    "name": "[Default] New Hire Checklist",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-24T21:04:17.3523337Z"
+}

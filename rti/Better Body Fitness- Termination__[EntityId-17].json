@@ -2,11 +2,12 @@
   "general": {
     "entityId": 17,
     "enabled": false,
-    "parentName": null,
+    "parentName": "Better Body Fitness",
     "name": "Better Body Fitness: Termination",
     "tags": [],
     "parentOptions": [
       "Account/Access",
+      "Better Body Fitness",
       "Draft Items",
       "FCH Managers",
       "Hardware",
@@ -36,5 +37,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-20T21:17:06.1204715Z"
+  "lastModifiedAt": "2023-01-24T21:22:53.2709881Z"
 }

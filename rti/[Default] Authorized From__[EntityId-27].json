@@ -1,0 +1,41 @@
+{
+  "general": {
+    "entityId": 27,
+    "enabled": false,
+    "parentName": null,
+    "name": "[Default] Authorized From",
+    "tags": [],
+    "parentOptions": [
+      "Account/Access",
+      "Better Body Fitness",
+      "Draft Items",
+      "FCH Managers",
+      "Hardware",
+      "Microsoft Office 365",
+      "On Boarding",
+      "Software",
+      "Starters and leavers",
+      "Test",
+      "Urgent",
+      "Urgent - Cannot Work",
+      "XYZ Term"
+    ],
+    "titleTemplate": null,
+    "bodyTemplate": null,
+    "formUrl": null,
+    "formRedirect": null,
+    "ddForm": {
+      "entityId": 41597,
+      "name": "Authorization Form"
+    },
+    "taskTemplates": []
+  },
+  "ticket": {},
+  "filter": {
+    "entityId": 27,
+    "name": "[Default] Authorized From",
+    "rootFlag": true,
+    "inverseFlagTargets": []
+  },
+  "lastModifiedAt": "2023-01-24T21:06:35.5786559Z"
+}

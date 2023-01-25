@@ -2,7 +2,7 @@
   "general": {
     "entityId": 16,
     "enabled": false,
-    "parentName": null,
+    "parentName": "Better Body Fitness",
     "name": "Better Body Fitness: New Employee Checklist",
     "tags": [
       "bbf",
@@ -10,7 +10,9 @@
     ],
     "parentOptions": [
       "Account/Access",
+      "Better Body Fitness",
       "Draft Items",
+      "FCH Managers",
       "Hardware",
       "Microsoft Office 365",
       "On Boarding",
@@ -38,5 +40,5 @@
     "rootFlag": true,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-20T20:29:32.635931Z"
+  "lastModifiedAt": "2023-01-24T21:22:43.4990359Z"
 }

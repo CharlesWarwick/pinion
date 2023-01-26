@@ -4,9 +4,7 @@
     "enabled": true,
     "parentName": "Starters and leavers",
     "name": "Employee Leaving",
-    "tags": [
-      "hr"
-    ],
+    "tags": [],
     "parentOptions": [
       "Account/Access",
       "Better Body Fitness",
@@ -41,8 +39,8 @@
   "filter": {
     "entityId": 12,
     "name": "Employee Leaving",
-    "rootFlag": true,
+    "rootFlag": false,
     "inverseFlagTargets": []
   },
-  "lastModifiedAt": "2023-01-23T16:39:21.0007798Z"
+  "lastModifiedAt": "2023-01-25T19:06:05.0492845Z"
 }

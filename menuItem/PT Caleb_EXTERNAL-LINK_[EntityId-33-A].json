@@ -1,0 +1,18 @@
+{
+  "entityId": "33-A",
+  "type": "external-link",
+  "name": "PT Caleb",
+  "icon": "accessibility",
+  "tags": [
+    "draft"
+  ],
+  "canReset": false,
+  "webContent": {
+    "url": "https://app.myglue.com",
+    "enableSandbox": false,
+    "sandboxAttributes": [],
+    "queryParameters": []
+  },
+  "lastModifiedAt": "2023-01-25T18:33:49.1841882-05:00",
+  "eTag": "A:384227-jlCYTB285kKu5lVbZGgLwQ"
+}

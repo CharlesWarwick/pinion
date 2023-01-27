@@ -1,0 +1,13 @@
+{
+  "entityId": "1-A",
+  "type": "biggerbrains",
+  "name": "Microsoft Office Training",
+  "icon": "library_books",
+  "tags": [],
+  "canReset": false,
+  "biggerBrains": {
+    "product": "biggerbrains-msft-office"
+  },
+  "lastModifiedAt": "2023-01-26T09:39:34.6419067-05:00",
+  "eTag": "A:386700-jlCYTB285kKu5lVbZGgLwQ"
+}

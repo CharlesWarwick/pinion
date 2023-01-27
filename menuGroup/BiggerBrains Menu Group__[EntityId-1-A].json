@@ -1,0 +1,100 @@
+{
+  "entityId": "1-A",
+  "name": "BiggerBrains Menu Group",
+  "tags": [],
+  "canReset": false,
+  "items": [
+    {
+      "entityId": "create-ticket",
+      "type": "built-in",
+      "name": "Contact Support",
+      "icon": "contact_support",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "tickets",
+      "type": "built-in",
+      "name": "Tickets",
+      "icon": "inbox",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "quotes",
+      "type": "built-in",
+      "name": "Quotes",
+      "icon": "receipt",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "invoices",
+      "type": "built-in",
+      "name": "Invoices",
+      "icon": "attach_money",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "notifications",
+      "type": "built-in",
+      "name": "Notifications",
+      "icon": "notifications",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "learning",
+      "type": "built-in",
+      "name": "Learning",
+      "icon": "school",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "1-A",
+      "type": "biggerbrains",
+      "name": "Microsoft Office Training",
+      "icon": "library_books",
+      "tags": [],
+      "canReset": false,
+      "biggerBrains": {
+        "product": "biggerbrains-msft-office"
+      },
+      "lastModifiedAt": "2023-01-26T09:39:34.6419067-05:00",
+      "eTag": "A:386700-jlCYTB285kKu5lVbZGgLwQ"
+    },
+    {
+      "entityId": "34-A",
+      "type": "biggerbrains",
+      "name": "General Training",
+      "icon": "library_books",
+      "tags": [],
+      "canReset": false,
+      "biggerBrains": {
+        "product": "biggerbrains-general"
+      },
+      "lastModifiedAt": "2023-01-26T09:39:15.4143926-05:00",
+      "eTag": "A:386699-jlCYTB285kKu5lVbZGgLwQ"
+    }
+  ],
+  "meta": {
+    "companyCount": 3,
+    "contactCount": 0
+  },
+  "lastModifiedAt": "2023-01-26T09:40:33.436798-05:00",
+  "eTag": "A:386702-jlCYTB285kKu5lVbZGgLwQ"
+}

@@ -1,0 +1,13 @@
+{
+  "entityId": "34-A",
+  "type": "biggerbrains",
+  "name": "General Training",
+  "icon": "library_books",
+  "tags": [],
+  "canReset": false,
+  "biggerBrains": {
+    "product": "biggerbrains-general"
+  },
+  "lastModifiedAt": "2023-01-26T09:39:15.4143926-05:00",
+  "eTag": "A:386699-jlCYTB285kKu5lVbZGgLwQ"
+}

@@ -67,15 +67,15 @@
     {
       "entityId": "1-A",
       "type": "biggerbrains",
-      "name": "Microsoft Training",
+      "name": "Microsoft Office Training",
       "icon": "library_books",
       "tags": [],
       "canReset": false,
       "biggerBrains": {
         "product": "biggerbrains-msft-office"
       },
-      "lastModifiedAt": "2023-01-18T14:26:13.6034326-05:00",
-      "eTag": "A:321418-jlCYTB285kKu5lVbZGgLwQ"
+      "lastModifiedAt": "2023-01-26T09:39:34.6419067-05:00",
+      "eTag": "A:386700-jlCYTB285kKu5lVbZGgLwQ"
     }
   ],
   "meta": {

@@ -2,7 +2,7 @@
   "entityId": "33-A",
   "type": "external-link",
   "name": "PT Caleb",
-  "icon": "accessibility",
+  "icon": "school",
   "tags": [
     "draft"
   ],
@@ -13,6 +13,6 @@
     "sandboxAttributes": [],
     "queryParameters": []
   },
-  "lastModifiedAt": "2023-01-25T18:33:49.1841882-05:00",
-  "eTag": "A:384227-jlCYTB285kKu5lVbZGgLwQ"
+  "lastModifiedAt": "2023-01-26T16:27:28.9093987-05:00",
+  "eTag": "A:391183-jlCYTB285kKu5lVbZGgLwQ"
 }

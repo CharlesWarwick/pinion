@@ -1,0 +1,16 @@
+{
+  "entityId": "67-A",
+  "type": "external-link",
+  "name": "MyGlue Link",
+  "icon": "school",
+  "tags": [],
+  "canReset": false,
+  "webContent": {
+    "url": "https://app.myglue.com/",
+    "enableSandbox": false,
+    "sandboxAttributes": [],
+    "queryParameters": []
+  },
+  "lastModifiedAt": "2023-01-27T11:13:50.5734647-05:00",
+  "eTag": "A:395111-jlCYTB285kKu5lVbZGgLwQ"
+}

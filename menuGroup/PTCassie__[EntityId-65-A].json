@@ -1,0 +1,125 @@
+{
+  "entityId": "65-A",
+  "name": "PTCassie",
+  "tags": [
+    "draft"
+  ],
+  "canReset": false,
+  "items": [
+    {
+      "entityId": "create-ticket",
+      "type": "built-in",
+      "name": "Contact Support",
+      "icon": "contact_support",
+      "tags": [
+        "draft"
+      ],
+      "canReset": true,
+      "lastModifiedAt": "2023-01-27T11:21:23.910203-05:00",
+      "eTag": "A:395191-jlCYTB285kKu5lVbZGgLwQ"
+    },
+    {
+      "entityId": "tickets",
+      "type": "built-in",
+      "name": "Tickets",
+      "icon": "inbox",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "quotes",
+      "type": "built-in",
+      "name": "Quotes",
+      "icon": "receipt",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "invoices",
+      "type": "built-in",
+      "name": "Invoices",
+      "icon": "attach_money",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "notifications",
+      "type": "built-in",
+      "name": "Notifications",
+      "icon": "notifications",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": null,
+      "eTag": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "entityId": "learning",
+      "type": "built-in",
+      "name": "Learning",
+      "icon": "school",
+      "tags": [],
+      "canReset": true,
+      "lastModifiedAt": "2023-01-27T11:58:03.8764745-05:00",
+      "eTag": "A:395542-jlCYTB285kKu5lVbZGgLwQ"
+    },
+    {
+      "entityId": "1-A",
+      "type": "biggerbrains",
+      "name": "Microsoft Office Training",
+      "icon": "library_books",
+      "tags": [],
+      "canReset": false,
+      "biggerBrains": {
+        "product": "biggerbrains-msft-office"
+      },
+      "lastModifiedAt": "2023-01-26T09:39:34.6419067-05:00",
+      "eTag": "A:386700-jlCYTB285kKu5lVbZGgLwQ"
+    },
+    {
+      "entityId": "67-A",
+      "type": "external-link",
+      "name": "MyGlue Link",
+      "icon": "school",
+      "tags": [],
+      "canReset": false,
+      "webContent": {
+        "url": "https://app.myglue.com/",
+        "enableSandbox": false,
+        "sandboxAttributes": [],
+        "queryParameters": []
+      },
+      "lastModifiedAt": "2023-01-27T11:13:50.5734647-05:00",
+      "eTag": "A:395111-jlCYTB285kKu5lVbZGgLwQ"
+    },
+    {
+      "entityId": "69-A",
+      "type": "external-link",
+      "name": "BreachSecureNow",
+      "icon": "school",
+      "tags": [
+        "draft"
+      ],
+      "canReset": false,
+      "webContent": {
+        "url": "https://portal.pii-protect.com/#/login",
+        "enableSandbox": false,
+        "sandboxAttributes": [],
+        "queryParameters": []
+      },
+      "lastModifiedAt": "2023-01-27T11:43:04.2219341-05:00",
+      "eTag": "A:395416-jlCYTB285kKu5lVbZGgLwQ"
+    }
+  ],
+  "meta": {
+    "companyCount": 1,
+    "contactCount": 0
+  },
+  "lastModifiedAt": "2023-01-27T11:43:23.6153486-05:00",
+  "eTag": "A:395417-jlCYTB285kKu5lVbZGgLwQ"
+}
